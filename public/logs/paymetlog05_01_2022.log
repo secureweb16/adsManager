@@ -1,0 +1,338 @@
+========================Time ====================
+05-01-2022 05:20:23
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03377
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00017
+    [ipn_id] => c6cafa1497d7d2c98abf8fcfc248b11a
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA24SNRCEI56YH7SICBYVNYN
+)
+
+======================== Coin Payments Id ID ( 14 ) ====================
+
+======================== txn_id ( CPGA24SNRCEI56YH7SICBYVNYN ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== Pendding ====================
+========================Time ====================
+05-01-2022 05:21:26
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)
+========================Time ====================
+05-01-2022 05:23:21
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03377
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00017
+    [ipn_id] => cf531e6a766b0ac92de95640010c40b8
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.0336
+    [received_amount] => 0.03377
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPGA24SNRCEI56YH7SICBYVNYN
+)
+
+======================== Coin Payments Id ID ( 14 ) ====================
+
+======================== txn_id ( CPGA24SNRCEI56YH7SICBYVNYN ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== fundsdetails ====================
+App\Models\FundsDetails Object
+(
+    [connection:protected] => mysql
+    [table:protected] => funds_details
+    [primaryKey:protected] => id
+    [keyType:protected] => int
+    [incrementing] => 1
+    [with:protected] => Array
+        (
+        )
+
+    [withCount:protected] => Array
+        (
+        )
+
+    [preventsLazyLoading] => 
+    [perPage:protected] => 15
+    [exists] => 1
+    [wasRecentlyCreated] => 
+    [escapeWhenCastingToString:protected] => 
+    [attributes:protected] => Array
+        (
+            [id] => 1
+            [user_id] => 3
+            [total_funds] => 790
+            [spent_funds] => 10
+            [remaning_funds] => 675
+            [created_at] => 2021-12-23 10:34:22
+            [updated_at] => 2021-12-29 00:28:26
+        )
+
+    [original:protected] => Array
+        (
+            [id] => 1
+            [user_id] => 3
+            [total_funds] => 790
+            [spent_funds] => 10
+            [remaning_funds] => 675
+            [created_at] => 2021-12-23 10:34:22
+            [updated_at] => 2021-12-29 00:28:26
+        )
+
+    [changes:protected] => Array
+        (
+        )
+
+    [casts:protected] => Array
+        (
+        )
+
+    [classCastCache:protected] => Array
+        (
+        )
+
+    [attributeCastCache:protected] => Array
+        (
+        )
+
+    [dates:protected] => Array
+        (
+        )
+
+    [dateFormat:protected] => 
+    [appends:protected] => Array
+        (
+        )
+
+    [dispatchesEvents:protected] => Array
+        (
+        )
+
+    [observables:protected] => Array
+        (
+        )
+
+    [relations:protected] => Array
+        (
+        )
+
+    [touches:protected] => Array
+        (
+        )
+
+    [timestamps] => 1
+    [hidden:protected] => Array
+        (
+        )
+
+    [visible:protected] => Array
+        (
+        )
+
+    [fillable:protected] => Array
+        (
+        )
+
+    [guarded:protected] => Array
+        (
+            [0] => *
+        )
+
+)
+
+======================== Success ====================
+========================Time ====================
+05-01-2022 05:32:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)
+========================Time ====================
+05-01-2022 05:44:17
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)
+========================Time ====================
+05-01-2022 05:55:29
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)
+========================Time ====================
+05-01-2022 06:27:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)
+========================Time ====================
+05-01-2022 06:59:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)
+========================Time ====================
+05-01-2022 09:01:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)
+========================Time ====================
+05-01-2022 11:02:21
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)
+========================Time ====================
+05-01-2022 11:04:19
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)

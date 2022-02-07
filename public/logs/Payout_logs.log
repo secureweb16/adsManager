@@ -1,0 +1,27 @@
+======================== Time ====================
+30-12-2021 07:48:32======================== Request Data ====================
+Array
+(
+    [format] => json
+    [cmd] => create_withdrawal
+    [key] => 997e16967b31f165adb237b548aa4dcd879c9712fa29ec88e0636cdd499eecb4
+    [amount] => 1.5
+    [currency] => LTCT
+    [currency2] => USD
+    [address] => mgtgZDXtStLWyLJ6QExeoHgnCaY5rkP3nv
+    [version] => 1
+    [auto_confirm] => 1
+    [note] => Auto Payout
+)
+======================== Response ====================
+stdClass Object
+(
+    [error] => ok
+    [result] => stdClass Object
+        (
+            [id] => CWFL4JY2NKWUUJNO3NE1TIS4M1
+            [status] => 1
+            [amount] => 0.01018995
+        )
+
+)

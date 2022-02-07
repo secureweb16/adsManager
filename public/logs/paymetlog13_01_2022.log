@@ -1,0 +1,40 @@
+========================Time ====================
+13-01-2022 04:33:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => mgtgZDXtStLWyLJ6QExeoHgnCaY5rkP3nv
+    [amount] => 0.00225895
+    [amounti] => 225895
+    [currency] => LTCT
+    [id] => CWGA1MA18EK3GCCK019FTFCA1I
+    [ipn_id] => a0c5ce4ca21a5702d13e0ee972ca83ae
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verify wallet address
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 42db5c1804888837e10423e1ef8bcdb607c42a34c2ab6d1586e56d28650bc9e9
+)
+========================Time ====================
+13-01-2022 04:34:17
+======================== REQUEST data ====================
+Array
+(
+    [address] => mgtgZDXtStLWyLJ6QExeoHgnCaY5rkP3nv
+    [amount] => 0.00225895
+    [amounti] => 225895
+    [currency] => LTCT
+    [id] => CWGA1MA18EK3GCCK019FTFCA1I
+    [ipn_id] => a0c5ce4ca21a5702d13e0ee972ca83ae
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verify wallet address
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 42db5c1804888837e10423e1ef8bcdb607c42a34c2ab6d1586e56d28650bc9e9
+)

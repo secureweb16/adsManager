@@ -1,0 +1,20 @@
+========================Time ====================
+26-01-2022 10:53:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)

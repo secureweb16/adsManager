@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use App\Models\Campaign;
+use App\Models\CampaignDurationDetail;
+use App\Models\PublisherGroup;
+
+class PublishingCampaign extends Model
+{
+	use HasFactory;
+
+	public function get_campaigns(){
+		return $this->hasOne(Campaign::class,'id','campaign_id');
+	}
+
+	public function campaign_duration_details(){
+		return $this->hasOne(CampaignDurationDetail::class,'campaign_id','campaign_id');
+	}
+
+	public function publisher_group(){
+		return $this->hasMany(PublisherGroup::class,'user_id','publisher_id');
+	}
+}

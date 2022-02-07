@@ -1,0 +1,54 @@
+======================== Time ====================
+30-12-2021 07:14:44======================== Request Data ====================
+Array
+(
+    [format] => json
+    [cmd] => create_withdrawal
+    [key] => 997e16967b31f165adb237b548aa4dcd879c9712fa29ec88e0636cdd499eecb4
+    [amount] => 1
+    [currency] => LTCT
+    [currency2] => USD
+    [address] => mgtgZDXtStLWyLJ6QExeoHgnCaY5rkP3nv
+    [version] => 1
+    [auto_confirm] => 1
+    [note] => Auto Payout
+)
+======================== Response ====================
+stdClass Object
+(
+    [error] => ok
+    [result] => stdClass Object
+        (
+            [id] => CWFL2IG1YL5LQFFEV0NGETY3KK
+            [status] => 1
+            [amount] => 0.00681162
+        )
+
+)
+======================== Time ====================
+30-12-2021 07:33:05======================== Request Data ====================
+Array
+(
+    [format] => json
+    [cmd] => create_withdrawal
+    [key] => 997e16967b31f165adb237b548aa4dcd879c9712fa29ec88e0636cdd499eecb4
+    [amount] => 1.78
+    [currency] => LTCT
+    [currency2] => USD
+    [address] => mgtgZDXtStLWyLJ6QExeoHgnCaY5rkP3nv
+    [version] => 1
+    [auto_confirm] => 1
+    [note] => Auto Payout
+)
+======================== Response ====================
+stdClass Object
+(
+    [error] => ok
+    [result] => stdClass Object
+        (
+            [id] => CWFL5IPITVP14HZFHPH3EKPFIW
+            [status] => 1
+            [amount] => 0.01210127
+        )
+
+)

@@ -1,0 +1,179 @@
+========================Time ====================
+29-12-2021 10:28:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.01335457
+    [amounti] => 1335457
+    [currency] => BNB
+    [dest_tag] => Transfer
+    [id] => CWFL5THAVVKMGRTF2J7VZ3GRAY
+    [ipn_id] => 228870dda07223b19ba8d3139c2e11ed
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => E132B6D196E6A33AFAF3B495817EA7142041AE3829E9DC07A538003A49389CE8
+)
+========================Time ====================
+29-12-2021 10:39:34
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.01335457
+    [amounti] => 1335457
+    [currency] => BNB
+    [dest_tag] => Transfer
+    [id] => CWFL5THAVVKMGRTF2J7VZ3GRAY
+    [ipn_id] => 228870dda07223b19ba8d3139c2e11ed
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => E132B6D196E6A33AFAF3B495817EA7142041AE3829E9DC07A538003A49389CE8
+)
+========================Time ====================
+29-12-2021 10:50:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.01335457
+    [amounti] => 1335457
+    [currency] => BNB
+    [dest_tag] => Transfer
+    [id] => CWFL5THAVVKMGRTF2J7VZ3GRAY
+    [ipn_id] => 228870dda07223b19ba8d3139c2e11ed
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => E132B6D196E6A33AFAF3B495817EA7142041AE3829E9DC07A538003A49389CE8
+)
+========================Time ====================
+29-12-2021 11:01:21
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.01335457
+    [amounti] => 1335457
+    [currency] => BNB
+    [dest_tag] => Transfer
+    [id] => CWFL5THAVVKMGRTF2J7VZ3GRAY
+    [ipn_id] => 228870dda07223b19ba8d3139c2e11ed
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => E132B6D196E6A33AFAF3B495817EA7142041AE3829E9DC07A538003A49389CE8
+)
+========================Time ====================
+29-12-2021 11:32:20
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.01335457
+    [amounti] => 1335457
+    [currency] => BNB
+    [dest_tag] => Transfer
+    [id] => CWFL5THAVVKMGRTF2J7VZ3GRAY
+    [ipn_id] => 228870dda07223b19ba8d3139c2e11ed
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => E132B6D196E6A33AFAF3B495817EA7142041AE3829E9DC07A538003A49389CE8
+)
+========================Time ====================
+29-12-2021 11:52:11
+======================== REQUEST data ====================
+Array
+(
+    [address] => mzzzW2UFprqJf5oeQiiZk9HVjkqxgV7QgM
+    [amount] => 0.03441000
+    [amounti] => 3441000
+    [currency] => LTCT
+    [id] => CWFL1A3CPXNDRXLVH0WOXRDWZZ
+    [ipn_id] => ef6156b99b32b243a16616475302aa27
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 25b0a0fac790ba5840978723ebef05a28a540d24ee33870b1a8973d506208665
+)
+========================Time ====================
+29-12-2021 12:03:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.01335457
+    [amounti] => 1335457
+    [currency] => BNB
+    [dest_tag] => Transfer
+    [id] => CWFL5THAVVKMGRTF2J7VZ3GRAY
+    [ipn_id] => 228870dda07223b19ba8d3139c2e11ed
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => E132B6D196E6A33AFAF3B495817EA7142041AE3829E9DC07A538003A49389CE8
+)
+========================Time ====================
+29-12-2021 02:04:19
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.01335457
+    [amounti] => 1335457
+    [currency] => BNB
+    [dest_tag] => Transfer
+    [id] => CWFL5THAVVKMGRTF2J7VZ3GRAY
+    [ipn_id] => 228870dda07223b19ba8d3139c2e11ed
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => E132B6D196E6A33AFAF3B495817EA7142041AE3829E9DC07A538003A49389CE8
+)
+========================Time ====================
+29-12-2021 04:05:28
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.01335457
+    [amounti] => 1335457
+    [currency] => BNB
+    [dest_tag] => Transfer
+    [id] => CWFL5THAVVKMGRTF2J7VZ3GRAY
+    [ipn_id] => 228870dda07223b19ba8d3139c2e11ed
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => E132B6D196E6A33AFAF3B495817EA7142041AE3829E9DC07A538003A49389CE8
+)

@@ -1,0 +1,197 @@
+body.auth-board{
+	background: #f9f6f6;
+}
+.checkobx{
+	display: flex;
+}
+.checkobx label{
+	line-height: 2;
+    text-align: center;
+    font-size: 18px;
+    margin: 0px 10px;
+    /*color: #fff;*/
+}
+.btn.btn-default.submit {
+    background: #fff;
+}
+
+.checkobx input.form-control {
+    width: 31px;
+    margin-right: 10px;
+}
+
+
+/*Account Login Pages Css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+   font-size: 14px;
+   font-family: 'Poppins', sans-serif; 
+}
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.login_content h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    letter-spacing: 0;
+    line-height: 1em;
+    position: relative;
+}
+.login_content h1:before, .login_content h1:after {
+    display: none;
+}
+.registration_form, .login_form {
+    position: static;
+}
+.cmnformpages {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px;
+    overflow: auto;
+    background-image: linear-gradient(45deg, #2f1a2f, #6b3256);
+}
+.cmnformpages::before {
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+.cmnformpages .formwrapper {
+    background: #fff;
+    padding: 30px 50px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 20px;
+}
+.cmnformpages .formbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cmnformpages .btn.btn-default.submit {
+    background: #fff;
+    font-size: 16px;
+    background-color: #bb4661;
+    padding: 12px 40px;
+    color: #fff;
+    margin: 0 20px 10px 0;
+}
+.login_content {
+    padding: 0;
+    min-width: 100%;
+}
+.login_content form input[type="text"], .login_content form input[type="email"], .login_content form input[type="password"] {
+    height: 50px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+.login_content form div a {
+    font-size: 16px;
+    color: #bb4661;
+}
+.login_content form div.formbuttons a {
+    margin: 0 0 10px;
+}
+.login_content form div a:hover{
+    text-decoration: none;
+    color: #333;
+}
+.login_content div .reset_pass {
+    margin-top: 0px !important;
+    margin-right: 0;
+}
+p.change_link {
+    margin: 0;
+}
+.login_content form div p.change_link a.to_register {
+    margin: 10px 0 0 0 !important;
+    display: block;
+    background: #6b3256;
+    color: #fff;
+    text-shadow: none;
+    padding: 12px;
+}
+.regisret-content .formbuttons {
+    margin-top: 30px;
+}
+.cmnformpages button.close.btn {
+    text-shadow: none;
+    opacity: 1;
+    font-weight: 500;
+}
+.cmnformpages .checkobx {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cmnformpages ul.parsley-errors-list {
+    width: 100%;
+}
+.regisret-content .plate-from label {
+    padding: 0;
+    margin: 0;
+}
+.regisret-content .plate-from .col-md-3 > label {
+    font-size: 18px;
+    font-weight: 500;
+}
+.form-group.plate-from {
+    margin-top: 15px;
+}
+.regisret-content .plate-from .col-md-9 {
+    display: flex;
+    align-items: center;
+    fill: 18px;
+}
+.regisret-content .plate-from .col-md-9 input {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+.regisret-content .plate-from .col-md-9 label {
+    font-size: 18px;
+}
+
+
+@media(max-width: 767px){
+    .cmnformpages .formwrapper {
+        padding: 30px 20px;
+        width: 99%;
+    }
+    .cmnformpages .checkobx {
+        align-items: center;
+    }
+    .cmnformpages .checkobx label {
+        font-size: 16px;
+    }
+    .login_content h1::after,
+    .login_content h1::before{
+        display: none;
+    }
+}
+@media(max-width: 480px){
+    .cmnformpages .formbuttons {
+        flex-direction: column;
+    }
+    .cmnformpages .btn.btn-default.submit {
+        margin: 0 0px 10px 0;
+    }
+    .cmnformpages .btn.btn-default.submit {
+        width: 100%;
+    }
+}

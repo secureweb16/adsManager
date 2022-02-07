@@ -1,0 +1,260 @@
+========================Time ====================
+25-01-2022 05:13:19
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+25-01-2022 05:24:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+25-01-2022 05:35:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+25-01-2022 05:46:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+25-01-2022 05:49:12
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.00217430
+    [amounti] => 217430
+    [currency] => BNB
+    [id] => CWGA6GKVO3IYW6D3T9NXVHCPA3
+    [ipn_id] => 36cbad92f48e6f07f8fd056de7593279
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [note] => verification amount
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 42505E2DF781CAAE71C0B40EC97F93A31258D7EDD7A34D01BB71BC508C4502F2
+)
+========================Time ====================
+25-01-2022 06:17:20
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+25-01-2022 06:40:26
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.00219439
+    [amounti] => 219439
+    [currency] => BNB
+    [id] => CWGA3VX4VFT3DAU0QYTBG14WGW
+    [ipn_id] => a4e148399cbf087cbc72fc8fe4c69751
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [note] => verification amount
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => DE65CBE544D73772DD6DA9223CDDF202C297FF523898DBD6F27EE8EB3D8FFF88
+)
+========================Time ====================
+25-01-2022 06:48:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+25-01-2022 08:49:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+25-01-2022 10:50:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+25-01-2022 05:50:30
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.00217430
+    [amounti] => 217430
+    [currency] => BNB
+    [id] => CWGA6GKVO3IYW6D3T9NXVHCPA3
+    [ipn_id] => 36cbad92f48e6f07f8fd056de7593279
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [note] => verification amount
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 42505E2DF781CAAE71C0B40EC97F93A31258D7EDD7A34D01BB71BC508C4502F2
+)
+========================Time ====================
+25-01-2022 06:41:20
+======================== REQUEST data ====================
+Array
+(
+    [address] => bnb19crr63vaxn9c9lj5tn9cr4elvfaeal4kj9g4m0
+    [amount] => 0.00219439
+    [amounti] => 219439
+    [currency] => BNB
+    [id] => CWGA3VX4VFT3DAU0QYTBG14WGW
+    [ipn_id] => a4e148399cbf087cbc72fc8fe4c69751
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [note] => verification amount
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => DE65CBE544D73772DD6DA9223CDDF202C297FF523898DBD6F27EE8EB3D8FFF88
+)
+========================Time ====================
+25-01-2022 10:52:13
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 0.00001004
+    [amounti] => 1004
+    [currency] => BUSD.BEP20
+    [id] => CWGA0DA5CZP8XEC9DECX2VREZR
+    [ipn_id] => 205ba286014e9acaea30d79042006848
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => verification amount
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)

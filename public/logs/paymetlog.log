@@ -1,0 +1,3549 @@
+========================Time ====================
+20-12-2021 01:10:24
+======================== REQUEST data1 ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00196
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => cd6647b0ea88bd0d0d3b53dfe33d9fea
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL3WSNVSBEQKP3P8SPZZ2KDL
+)
+
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00196
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => cd6647b0ea88bd0d0d3b53dfe33d9fea
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL3WSNVSBEQKP3P8SPZZ2KDL
+)
+========================Time ====================
+20-12-2021 01:12:18
+======================== REQUEST data1 ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00196
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => 66bc10fcc8717746130aea72277d6810
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL2SUDTWHXE3O7MSIIFBMFCO
+)
+
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00196
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => 66bc10fcc8717746130aea72277d6810
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL2SUDTWHXE3O7MSIIFBMFCO
+)
+========================Time ====================
+20-12-2021 01:22:14
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => 41eff6c2995fe03a3dafa0db255f942c
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [status] => 1
+    [status_text] => Funds received and confirmed, sending to you shortly...
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+20-12-2021 01:23:20
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.0068
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 3.0E-5
+    [ipn_id] => c2a17196ed5f855f981535f03f4f1a65
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL3T1CCPBOFIEPB4SF70EIYO
+)
+
+======================== Coin Payments Id ID ( 4 ) ====================
+
+======================== txn_id ( CPFL3T1CCPBOFIEPB4SF70EIYO ) ====================
+
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+20-12-2021 01:24:14
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.0068
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 3.0E-5
+    [ipn_id] => f929b456fe0d0ca954640f7331ac2539
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL3T1CCPBOFIEPB4SF70EIYO
+)
+
+======================== Coin Payments Id ID ( 4 ) ====================
+
+======================== txn_id ( CPFL3T1CCPBOFIEPB4SF70EIYO ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+20-12-2021 01:26:17
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [net] => 0.001565
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+20-12-2021 01:37:22
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [net] => 0.001565
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+20-12-2021 01:48:16
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [net] => 0.001565
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+20-12-2021 01:59:18
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [net] => 0.001565
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+20-12-2021 02:30:23
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [net] => 0.001565
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+20-12-2021 03:01:24
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [net] => 0.001565
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+20-12-2021 05:02:30
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [net] => 0.001565
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+20-12-2021 07:03:22
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [net] => 0.001565
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 05:42:21
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 05:49:18
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 05:50:18
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 05:50:39
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 05:51:01
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 05:51:57
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 05:53:20
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Success ====================
+========================Time ====================
+21-12-2021 05:53:55
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Success ====================
+========================Time ====================
+21-12-2021 06:02:54
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Success ====================
+========================Time ====================
+21-12-2021 06:08:30
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:08:33
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:08:49
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:08:51
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:09:17
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:09:59
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:25:05
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:25:08
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:26:58
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:27:24
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 06:34:15
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 07:03:15
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== EROOR REPORT ====================
+No HMAC Signature Sent
+======================== EROOR REPORT ====================
+Error in reading Post Data
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 07:05:25
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => c90167ba0f3079148ab897bd468b16cb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [net] => 0.001565
+    [received_amount] => 0.00195
+    [received_confirms] => 10
+    [send_tx] => 38EA12979A6FCDE96BEC569A79D9EB1793DDACA65B25447FB8DF62BC1AAD75A6
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5KTWVMPWDRT2VTC6BBJEZZ
+)
+
+======================== Coin Payments Id ID ( 11 ) ====================
+
+======================== txn_id ( CPFL5KTWVMPWDRT2VTC6BBJEZZ ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order========================Time ====================
+21-12-2021 07:22:18
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00189
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => 41d4566d3f854993112646fc2340c71a
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL6N3WOJPEF0H1H84WULJX5H
+)
+
+======================== Coin Payments Id ID ( 13 ) ====================
+
+======================== txn_id ( CPFL6N3WOJPEF0H1H84WULJX5H ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+21-12-2021 07:46:15
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00652
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 3.0E-5
+    [ipn_id] => b86c948971a35dd3745fe096af7d0a62
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL5UQRAJLSZIABXZ3SWRVAYF
+)
+
+======================== Coin Payments Id ID ( 14 ) ====================
+
+======================== txn_id ( CPFL5UQRAJLSZIABXZ3SWRVAYF ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+21-12-2021 07:49:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => mxtVVsRHpC3V878MsgeVZpF3hRoYWtdvmU
+    [amount] => 0.00752000
+    [amounti] => 752000
+    [currency] => LTCT
+    [id] => CWFL5M1RDGYCCW7L2RLFHJQDQ9
+    [ipn_id] => e795e20a7a86c3f877daa40d09fbf500
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 2e0179cee2c9c34122e4728af05f096489361deb5549a4691a06d277fc832d2a
+)
+========================Time ====================
+21-12-2021 07:50:15
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00652
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 3.0E-5
+    [ipn_id] => 5e15e40682d72766cc025a5cc785df21
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.00649
+    [received_amount] => 0.00652
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5UQRAJLSZIABXZ3SWRVAYF
+)
+
+======================== Coin Payments Id ID ( 14 ) ====================
+
+======================== txn_id ( CPFL5UQRAJLSZIABXZ3SWRVAYF ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Success ====================
+========================Time ====================
+21-12-2021 09:33:24
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03268
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => 12e881e6c8d34bfda4e7c41720db1246
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL5ZKCNKWJNRSEDFSYOKANGM
+)
+
+======================== Coin Payments Id ID ( 15 ) ====================
+
+======================== txn_id ( CPFL5ZKCNKWJNRSEDFSYOKANGM ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+21-12-2021 09:34:26
+======================== REQUEST data ====================
+Array
+(
+    [address] => mn5XhZrdPpoPQaNkyoDxZwvThjMYYJV3wB
+    [amount] => 0.03368000
+    [amounti] => 3368000
+    [currency] => LTCT
+    [id] => CWFL3DJQ6W3TUDDVPI7NSSZLEX
+    [ipn_id] => cd9128cb9ea32b0b1219e4241a4ca556
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcfe2239b5389768cff1f817cfd0000b80bcd1f3732477b528bf593fec15869e
+)
+========================Time ====================
+21-12-2021 09:35:18
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03268
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => d3d06919788f81dc30104fd4f261a3e0
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0.03268
+    [received_confirms] => 0
+    [status] => 1
+    [status_text] => Funds received and confirmed, sending to you shortly...
+    [txn_id] => CPFL5ZKCNKWJNRSEDFSYOKANGM
+)
+
+======================== Coin Payments Id ID ( 15 ) ====================
+
+======================== txn_id ( CPFL5ZKCNKWJNRSEDFSYOKANGM ) ====================
+
+======================== status ( 1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+21-12-2021 09:37:15
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03268
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => d139b5e38a74db3c5fb75fb31f8245af
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.03252
+    [received_amount] => 0.03268
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5ZKCNKWJNRSEDFSYOKANGM
+)
+
+======================== Coin Payments Id ID ( 15 ) ====================
+
+======================== txn_id ( CPFL5ZKCNKWJNRSEDFSYOKANGM ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Success ====================
+========================Time ====================
+21-12-2021 09:45:19
+======================== REQUEST data ====================
+Array
+(
+    [address] => mn5XhZrdPpoPQaNkyoDxZwvThjMYYJV3wB
+    [amount] => 0.03368000
+    [amounti] => 3368000
+    [currency] => LTCT
+    [id] => CWFL3DJQ6W3TUDDVPI7NSSZLEX
+    [ipn_id] => cd9128cb9ea32b0b1219e4241a4ca556
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcfe2239b5389768cff1f817cfd0000b80bcd1f3732477b528bf593fec15869e
+)
+========================Time ====================
+21-12-2021 09:56:27
+======================== REQUEST data ====================
+Array
+(
+    [address] => mn5XhZrdPpoPQaNkyoDxZwvThjMYYJV3wB
+    [amount] => 0.03368000
+    [amounti] => 3368000
+    [currency] => LTCT
+    [id] => CWFL3DJQ6W3TUDDVPI7NSSZLEX
+    [ipn_id] => cd9128cb9ea32b0b1219e4241a4ca556
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcfe2239b5389768cff1f817cfd0000b80bcd1f3732477b528bf593fec15869e
+)
+========================Time ====================
+21-12-2021 10:08:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => mn5XhZrdPpoPQaNkyoDxZwvThjMYYJV3wB
+    [amount] => 0.03368000
+    [amounti] => 3368000
+    [currency] => LTCT
+    [id] => CWFL3DJQ6W3TUDDVPI7NSSZLEX
+    [ipn_id] => cd9128cb9ea32b0b1219e4241a4ca556
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcfe2239b5389768cff1f817cfd0000b80bcd1f3732477b528bf593fec15869e
+)
+========================Time ====================
+21-12-2021 10:11:21
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 2
+    [amount2] => 4.0E-5
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-6
+    [ipn_id] => fd5867d026cab251ce6aca81a4ffedfb
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL55EOVD2ETPW84VRVH8ZDTD
+)
+
+======================== Coin Payments Id ID ( 16 ) ====================
+
+======================== txn_id ( CPFL55EOVD2ETPW84VRVH8ZDTD ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+21-12-2021 10:12:28
+======================== REQUEST data ====================
+Array
+(
+    [address] => mpj2w1mfsKmkXYUy9PDEdvLjLUJiPDkoQq
+    [amount] => 0.01403000
+    [amounti] => 1403000
+    [currency] => LTCT
+    [id] => CWFL2C1KMKPQIGDFHHVDYME7AD
+    [ipn_id] => 492b084a01aeb6c83678c025a1a3e256
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 24194eebd9ce52a2cd2ea8657786822a2e36f60e876e7cfc87696f8a761573bb
+)
+========================Time ====================
+21-12-2021 10:12:30
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 2
+    [amount2] => 0.01303
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 7.0E-5
+    [ipn_id] => 16a4f444437552284c27bef5497afe00
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL47VXYQZEUBGF3CFU6UK7F8
+)
+
+======================== Coin Payments Id ID ( 17 ) ====================
+
+======================== txn_id ( CPFL47VXYQZEUBGF3CFU6UK7F8 ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+21-12-2021 10:14:21
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 2
+    [amount2] => 0.01303
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 7.0E-5
+    [ipn_id] => cb4a2c477ed553f4e839ed0332489345
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.01296
+    [received_amount] => 0.01303
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL47VXYQZEUBGF3CFU6UK7F8
+)
+
+======================== Coin Payments Id ID ( 17 ) ====================
+
+======================== txn_id ( CPFL47VXYQZEUBGF3CFU6UK7F8 ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Success ====================
+========================Time ====================
+21-12-2021 10:23:20
+======================== REQUEST data ====================
+Array
+(
+    [address] => mpj2w1mfsKmkXYUy9PDEdvLjLUJiPDkoQq
+    [amount] => 0.01403000
+    [amounti] => 1403000
+    [currency] => LTCT
+    [id] => CWFL2C1KMKPQIGDFHHVDYME7AD
+    [ipn_id] => 492b084a01aeb6c83678c025a1a3e256
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 24194eebd9ce52a2cd2ea8657786822a2e36f60e876e7cfc87696f8a761573bb
+)
+========================Time ====================
+21-12-2021 10:34:19
+======================== REQUEST data ====================
+Array
+(
+    [address] => mpj2w1mfsKmkXYUy9PDEdvLjLUJiPDkoQq
+    [amount] => 0.01403000
+    [amounti] => 1403000
+    [currency] => LTCT
+    [id] => CWFL2C1KMKPQIGDFHHVDYME7AD
+    [ipn_id] => 492b084a01aeb6c83678c025a1a3e256
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 24194eebd9ce52a2cd2ea8657786822a2e36f60e876e7cfc87696f8a761573bb
+)
+========================Time ====================
+21-12-2021 10:40:26
+======================== REQUEST data ====================
+Array
+(
+    [address] => mn5XhZrdPpoPQaNkyoDxZwvThjMYYJV3wB
+    [amount] => 0.03368000
+    [amounti] => 3368000
+    [currency] => LTCT
+    [id] => CWFL3DJQ6W3TUDDVPI7NSSZLEX
+    [ipn_id] => cd9128cb9ea32b0b1219e4241a4ca556
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcfe2239b5389768cff1f817cfd0000b80bcd1f3732477b528bf593fec15869e
+)
+========================Time ====================
+21-12-2021 10:45:20
+======================== REQUEST data ====================
+Array
+(
+    [address] => mpj2w1mfsKmkXYUy9PDEdvLjLUJiPDkoQq
+    [amount] => 0.01403000
+    [amounti] => 1403000
+    [currency] => LTCT
+    [id] => CWFL2C1KMKPQIGDFHHVDYME7AD
+    [ipn_id] => 492b084a01aeb6c83678c025a1a3e256
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 24194eebd9ce52a2cd2ea8657786822a2e36f60e876e7cfc87696f8a761573bb
+)
+========================Time ====================
+21-12-2021 11:11:27
+======================== REQUEST data ====================
+Array
+(
+    [address] => mn5XhZrdPpoPQaNkyoDxZwvThjMYYJV3wB
+    [amount] => 0.03368000
+    [amounti] => 3368000
+    [currency] => LTCT
+    [id] => CWFL3DJQ6W3TUDDVPI7NSSZLEX
+    [ipn_id] => cd9128cb9ea32b0b1219e4241a4ca556
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcfe2239b5389768cff1f817cfd0000b80bcd1f3732477b528bf593fec15869e
+)
+========================Time ====================
+21-12-2021 11:16:14
+======================== REQUEST data ====================
+Array
+(
+    [address] => mpj2w1mfsKmkXYUy9PDEdvLjLUJiPDkoQq
+    [amount] => 0.01403000
+    [amounti] => 1403000
+    [currency] => LTCT
+    [id] => CWFL2C1KMKPQIGDFHHVDYME7AD
+    [ipn_id] => 492b084a01aeb6c83678c025a1a3e256
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 24194eebd9ce52a2cd2ea8657786822a2e36f60e876e7cfc87696f8a761573bb
+)
+========================Time ====================
+21-12-2021 11:22:15
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.01882
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 9.0E-5
+    [ipn_id] => 4c8103401c836a48ef770d3d7793e599
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL0AVBB9I0SYRRHKANEEAEIL
+)
+
+======================== Coin Payments Id ID ( 18 ) ====================
+
+======================== txn_id ( CPFL0AVBB9I0SYRRHKANEEAEIL ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+21-12-2021 11:24:11
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.00021
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-6
+    [ipn_id] => 06c3bf0aff47e4167bdc549f6eac9b86
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL6Q6HJ7IM6JAQ15RX8XAIOB
+)
+
+======================== Coin Payments Id ID ( 19 ) ====================
+
+======================== txn_id ( CPFL6Q6HJ7IM6JAQ15RX8XAIOB ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+21-12-2021 11:47:18
+======================== REQUEST data ====================
+Array
+(
+    [address] => mpj2w1mfsKmkXYUy9PDEdvLjLUJiPDkoQq
+    [amount] => 0.01403000
+    [amounti] => 1403000
+    [currency] => LTCT
+    [id] => CWFL2C1KMKPQIGDFHHVDYME7AD
+    [ipn_id] => 492b084a01aeb6c83678c025a1a3e256
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 24194eebd9ce52a2cd2ea8657786822a2e36f60e876e7cfc87696f8a761573bb
+)
+========================Time ====================
+21-12-2021 12:37:16
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => bf4774273071cea3ca395f728167dbf2
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL1PY36UQQA88NKZHO0SP7IO
+)
+
+======================== Coin Payments Id ID ( 5 ) ====================
+
+======================== txn_id ( CPFL1PY36UQQA88NKZHO0SP7IO ) ====================
+
+======================== EROOR REPORT ====================
+No Or incorrect merchant id
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+21-12-2021 12:47:15
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => 3e14d1815cde1792edae9691efafa99e
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL6JZAMKVK6NY6UKIWFKKPMG
+)
+
+======================== Coin Payments Id ID ( 6 ) ====================
+
+======================== txn_id ( CPFL6JZAMKVK6NY6UKIWFKKPMG ) ====================
+
+======================== EROOR REPORT ====================
+No Or incorrect merchant id
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+21-12-2021 12:50:29
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => 9f4fa661d8630fdd84d64a826ed5ca5f
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL2W2KUPRJLZ25MHNRVGZFC6
+)
+
+======================== Coin Payments Id ID ( 7 ) ====================
+
+======================== txn_id ( CPFL2W2KUPRJLZ25MHNRVGZFC6 ) ====================
+
+======================== EROOR REPORT ====================
+No Or incorrect merchant id
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+21-12-2021 01:01:27
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00195
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => 33e7f391e3555daabb088904246050f4
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL6RSBC9VJOVAL69SGNPJXEL
+)
+
+======================== Coin Payments Id ID ( 8 ) ====================
+
+======================== txn_id ( CPFL6RSBC9VJOVAL69SGNPJXEL ) ====================
+
+======================== EROOR REPORT ====================
+No Or incorrect merchant id
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+21-12-2021 01:11:20
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00196
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => 007086a4c69b9e6fcf1537553decec98
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL3WSNVSBEQKP3P8SPZZ2KDL
+)
+
+======================== Coin Payments Id ID ( 9 ) ====================
+
+======================== txn_id ( CPFL3WSNVSBEQKP3P8SPZZ2KDL ) ====================
+
+======================== EROOR REPORT ====================
+No Or incorrect merchant id
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+21-12-2021 01:12:27
+======================== REQUEST data ====================
+Array
+(
+    [address] => mn5XhZrdPpoPQaNkyoDxZwvThjMYYJV3wB
+    [amount] => 0.03368000
+    [amounti] => 3368000
+    [currency] => LTCT
+    [id] => CWFL3DJQ6W3TUDDVPI7NSSZLEX
+    [ipn_id] => cd9128cb9ea32b0b1219e4241a4ca556
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcfe2239b5389768cff1f817cfd0000b80bcd1f3732477b528bf593fec15869e
+)
+========================Time ====================
+21-12-2021 01:13:17
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00196
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => 0c9815cc63e9f9a51d0a42c49dec8d87
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL2SUDTWHXE3O7MSIIFBMFCO
+)
+
+======================== Coin Payments Id ID ( 10 ) ====================
+
+======================== txn_id ( CPFL2SUDTWHXE3O7MSIIFBMFCO ) ====================
+
+======================== EROOR REPORT ====================
+No Or incorrect merchant id
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+21-12-2021 01:48:25
+======================== REQUEST data ====================
+Array
+(
+    [address] => mpj2w1mfsKmkXYUy9PDEdvLjLUJiPDkoQq
+    [amount] => 0.01403000
+    [amounti] => 1403000
+    [currency] => LTCT
+    [id] => CWFL2C1KMKPQIGDFHHVDYME7AD
+    [ipn_id] => 492b084a01aeb6c83678c025a1a3e256
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 24194eebd9ce52a2cd2ea8657786822a2e36f60e876e7cfc87696f8a761573bb
+)
+========================Time ====================
+21-12-2021 03:14:33
+======================== REQUEST data ====================
+Array
+(
+    [address] => mn5XhZrdPpoPQaNkyoDxZwvThjMYYJV3wB
+    [amount] => 0.03368000
+    [amounti] => 3368000
+    [currency] => LTCT
+    [id] => CWFL3DJQ6W3TUDDVPI7NSSZLEX
+    [ipn_id] => cd9128cb9ea32b0b1219e4241a4ca556
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcfe2239b5389768cff1f817cfd0000b80bcd1f3732477b528bf593fec15869e
+)
+========================Time ====================
+21-12-2021 03:49:25
+======================== REQUEST data ====================
+Array
+(
+    [address] => mpj2w1mfsKmkXYUy9PDEdvLjLUJiPDkoQq
+    [amount] => 0.01403000
+    [amounti] => 1403000
+    [currency] => LTCT
+    [id] => CWFL2C1KMKPQIGDFHHVDYME7AD
+    [ipn_id] => 492b084a01aeb6c83678c025a1a3e256
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 24194eebd9ce52a2cd2ea8657786822a2e36f60e876e7cfc87696f8a761573bb
+)
+========================Time ====================
+21-12-2021 06:14:20
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 2
+    [amount2] => 4.0E-5
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-6
+    [ipn_id] => 9bfb454e59699481c181ec5c73379087
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL55EOVD2ETPW84VRVH8ZDTD
+)
+
+======================== Coin Payments Id ID ( 16 ) ====================
+
+======================== txn_id ( CPFL55EOVD2ETPW84VRVH8ZDTD ) ====================
+
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+21-12-2021 07:24:20
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.00021
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-6
+    [ipn_id] => e8dab6983157f5ed7385577d0140d8d4
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL6Q6HJ7IM6JAQ15RX8XAIOB
+)
+
+======================== Coin Payments Id ID ( 19 ) ====================
+
+======================== txn_id ( CPFL6Q6HJ7IM6JAQ15RX8XAIOB ) ====================
+
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+22-12-2021 03:16:14
+======================== REQUEST data ====================
+Array
+(
+    [address] => mn5XhZrdPpoPQaNkyoDxZwvThjMYYJV3wB
+    [amount] => 0.03368000
+    [amounti] => 3368000
+    [currency] => LTCT
+    [id] => CWFL3DJQ6W3TUDDVPI7NSSZLEX
+    [ipn_id] => cd9128cb9ea32b0b1219e4241a4ca556
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcfe2239b5389768cff1f817cfd0000b80bcd1f3732477b528bf593fec15869e
+)
+========================Time ====================
+22-12-2021 03:50:22
+======================== REQUEST data ====================
+Array
+(
+    [address] => mpj2w1mfsKmkXYUy9PDEdvLjLUJiPDkoQq
+    [amount] => 0.01403000
+    [amounti] => 1403000
+    [currency] => LTCT
+    [id] => CWFL2C1KMKPQIGDFHHVDYME7AD
+    [ipn_id] => 492b084a01aeb6c83678c025a1a3e256
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 24194eebd9ce52a2cd2ea8657786822a2e36f60e876e7cfc87696f8a761573bb
+)
+========================Time ====================
+22-12-2021 04:27:18
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.01872
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 9.0E-5
+    [ipn_id] => db3e642f545803dfd08a25e6ce039ca7
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL2MI0ANQGFPXS5MRVECMSVP
+)
+
+======================== Coin Payments Id ID ( 20 ) ====================
+
+======================== txn_id ( CPFL2MI0ANQGFPXS5MRVECMSVP ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ============================================Time ====================
+22-12-2021 06:22:25
+======================== REQUEST data ====================
+Array
+(
+    [address] => n36Mu33kPx5fuypwHkjWQjJQGPKDkCX1mA
+    [amount] => 0.06527000
+    [amounti] => 6527000
+    [currency] => LTCT
+    [id] => CWFL3RARPEAYRDOZERISNBXV2F
+    [ipn_id] => e48fd00c328e8f666c102414ef57e5a1
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => af55833966c2c2e030f71103f3e73f087e036a8e9e56e9e199e87322fadc4ede
+)
+========================Time ====================
+22-12-2021 06:22:26
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03214
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => f4a1d2c2854082f6da4233f14f6aaf84
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL64F91EF99PPMSHAP2LOYSS
+)
+
+======================== Coin Payments Id ID ( 21 ) ====================
+
+======================== txn_id ( CPFL64F91EF99PPMSHAP2LOYSS ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+22-12-2021 06:23:21
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.06427
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 0.00032
+    [ipn_id] => 3e55463e967d235b9820f52621c93728
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL5N23BWQGREVPQ0E4IXVFLA
+)
+
+======================== Coin Payments Id ID ( 22 ) ====================
+
+======================== txn_id ( CPFL5N23BWQGREVPQ0E4IXVFLA ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+22-12-2021 06:25:24
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.06427
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 0.00032
+    [ipn_id] => 8aab06452e57a953bfde385949f8d7e2
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.06395
+    [received_amount] => 0.06427
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL5N23BWQGREVPQ0E4IXVFLA
+)
+
+======================== Coin Payments Id ID ( 22 ) ====================
+
+======================== txn_id ( CPFL5N23BWQGREVPQ0E4IXVFLA ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Success ====================
+========================Time ====================
+22-12-2021 06:33:17
+======================== REQUEST data ====================
+Array
+(
+    [address] => n36Mu33kPx5fuypwHkjWQjJQGPKDkCX1mA
+    [amount] => 0.06527000
+    [amounti] => 6527000
+    [currency] => LTCT
+    [id] => CWFL3RARPEAYRDOZERISNBXV2F
+    [ipn_id] => e48fd00c328e8f666c102414ef57e5a1
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => af55833966c2c2e030f71103f3e73f087e036a8e9e56e9e199e87322fadc4ede
+)
+========================Time ====================
+22-12-2021 06:44:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => n36Mu33kPx5fuypwHkjWQjJQGPKDkCX1mA
+    [amount] => 0.06527000
+    [amounti] => 6527000
+    [currency] => LTCT
+    [id] => CWFL3RARPEAYRDOZERISNBXV2F
+    [ipn_id] => e48fd00c328e8f666c102414ef57e5a1
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => af55833966c2c2e030f71103f3e73f087e036a8e9e56e9e199e87322fadc4ede
+)
+========================Time ====================
+22-12-2021 06:55:17
+======================== REQUEST data ====================
+Array
+(
+    [address] => n36Mu33kPx5fuypwHkjWQjJQGPKDkCX1mA
+    [amount] => 0.06527000
+    [amounti] => 6527000
+    [currency] => LTCT
+    [id] => CWFL3RARPEAYRDOZERISNBXV2F
+    [ipn_id] => e48fd00c328e8f666c102414ef57e5a1
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => af55833966c2c2e030f71103f3e73f087e036a8e9e56e9e199e87322fadc4ede
+)
+========================Time ====================
+22-12-2021 07:24:16
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03214
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => db315e460db333bf4e463dc66eaf165e
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL64F91EF99PPMSHAP2LOYSS
+)
+
+======================== Coin Payments Id ID ( 21 ) ====================
+
+======================== txn_id ( CPFL64F91EF99PPMSHAP2LOYSS ) ====================
+
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+22-12-2021 07:24:17
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 1
+    [amount2] => 0.00189
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 1.0E-5
+    [ipn_id] => ed0d1fb002b439d05117f9ab01b8ff95
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL6N3WOJPEF0H1H84WULJX5H
+)
+
+======================== Coin Payments Id ID ( 13 ) ====================
+
+======================== txn_id ( CPFL6N3WOJPEF0H1H84WULJX5H ) ====================
+
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+22-12-2021 07:26:17
+======================== REQUEST data ====================
+Array
+(
+    [address] => n36Mu33kPx5fuypwHkjWQjJQGPKDkCX1mA
+    [amount] => 0.06527000
+    [amounti] => 6527000
+    [currency] => LTCT
+    [id] => CWFL3RARPEAYRDOZERISNBXV2F
+    [ipn_id] => e48fd00c328e8f666c102414ef57e5a1
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => af55833966c2c2e030f71103f3e73f087e036a8e9e56e9e199e87322fadc4ede
+)
+========================Time ====================
+22-12-2021 07:57:17
+======================== REQUEST data ====================
+Array
+(
+    [address] => n36Mu33kPx5fuypwHkjWQjJQGPKDkCX1mA
+    [amount] => 0.06527000
+    [amounti] => 6527000
+    [currency] => LTCT
+    [id] => CWFL3RARPEAYRDOZERISNBXV2F
+    [ipn_id] => e48fd00c328e8f666c102414ef57e5a1
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => af55833966c2c2e030f71103f3e73f087e036a8e9e56e9e199e87322fadc4ede
+)
+========================Time ====================
+22-12-2021 09:58:18
+======================== REQUEST data ====================
+Array
+(
+    [address] => n36Mu33kPx5fuypwHkjWQjJQGPKDkCX1mA
+    [amount] => 0.06527000
+    [amounti] => 6527000
+    [currency] => LTCT
+    [id] => CWFL3RARPEAYRDOZERISNBXV2F
+    [ipn_id] => e48fd00c328e8f666c102414ef57e5a1
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => af55833966c2c2e030f71103f3e73f087e036a8e9e56e9e199e87322fadc4ede
+)
+========================Time ====================
+22-12-2021 11:24:13
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.01882
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 9.0E-5
+    [ipn_id] => b1110e2b5d8e0a161362fdf00753c4d3
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL0AVBB9I0SYRRHKANEEAEIL
+)
+
+======================== Coin Payments Id ID ( 18 ) ====================
+
+======================== txn_id ( CPFL0AVBB9I0SYRRHKANEEAEIL ) ====================
+
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+22-12-2021 11:59:14
+======================== REQUEST data ====================
+Array
+(
+    [address] => n36Mu33kPx5fuypwHkjWQjJQGPKDkCX1mA
+    [amount] => 0.06527000
+    [amounti] => 6527000
+    [currency] => LTCT
+    [id] => CWFL3RARPEAYRDOZERISNBXV2F
+    [ipn_id] => e48fd00c328e8f666c102414ef57e5a1
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => af55833966c2c2e030f71103f3e73f087e036a8e9e56e9e199e87322fadc4ede
+)
+========================Time ====================
+23-12-2021 06:03:22
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.01872
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB
+    [email] => surinder.secureweb@gmail.com
+    [fee] => 9.0E-5
+    [ipn_id] => 51469ccc5f57dc41d00b9e8deae8c0e6
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPFL2MI0ANQGFPXS5MRVECMSVP
+)
+
+======================== Coin Payments Id ID ( 20 ) ====================
+
+======================== txn_id ( CPFL2MI0ANQGFPXS5MRVECMSVP ) ====================
+
+======================== status ( -1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Error ====================
+========================Time ====================
+23-12-2021 09:54:13
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 20
+    [amount2] => 0.12893
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00064
+    [ipn_id] => 7d76369c82acd038e1258bc096b97928
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL62YXZPCGTDFINCSVJC7EIU
+)
+
+======================== Coin Payments Id ID ( 1 ) ====================
+
+======================== txn_id ( CPFL62YXZPCGTDFINCSVJC7EIU ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+23-12-2021 09:55:22
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+23-12-2021 09:56:15
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 20
+    [amount2] => 0.12893
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00064
+    [ipn_id] => 589fb5e193b7c22e360e3bcb57218872
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0.12893
+    [received_confirms] => 0
+    [status] => 1
+    [status_text] => Funds received and confirmed, sending to you shortly...
+    [txn_id] => CPFL62YXZPCGTDFINCSVJC7EIU
+)
+
+======================== Coin Payments Id ID ( 1 ) ====================
+
+======================== txn_id ( CPFL62YXZPCGTDFINCSVJC7EIU ) ====================
+
+======================== status ( 1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+23-12-2021 09:58:15
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 20
+    [amount2] => 0.12893
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00064
+    [ipn_id] => b0192b16ea501471fda7eae1fb772dde
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.12829
+    [received_amount] => 0.12893
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL62YXZPCGTDFINCSVJC7EIU
+)
+
+======================== Coin Payments Id ID ( 1 ) ====================
+
+======================== txn_id ( CPFL62YXZPCGTDFINCSVJC7EIU ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Success ====================
+========================Time ====================
+23-12-2021 10:06:27
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+23-12-2021 10:10:24
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03219
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => d49f07b53e63e83810d72c3262c79bca
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL4VHIH3HITUMM1BZPPSM7KY
+)
+
+======================== Coin Payments Id ID ( 2 ) ====================
+
+======================== txn_id ( CPFL4VHIH3HITUMM1BZPPSM7KY ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+23-12-2021 10:11:28
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+23-12-2021 10:14:18
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03219
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => 985aabca7f823342d663c8bf2e2437a9
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.03203
+    [received_amount] => 0.03219
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL4VHIH3HITUMM1BZPPSM7KY
+)
+
+======================== Coin Payments Id ID ( 2 ) ====================
+
+======================== txn_id ( CPFL4VHIH3HITUMM1BZPPSM7KY ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Success ====================
+========================Time ====================
+23-12-2021 10:17:20
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+23-12-2021 10:22:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+23-12-2021 10:23:19
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03219
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => d0d87dca0ae4d529ffa2bc0460075565
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0.03219
+    [received_confirms] => 0
+    [status] => 1
+    [status_text] => Funds received and confirmed, sending to you shortly...
+    [txn_id] => CPFL4VHIH3HITUMM1BZPPSM7KY
+)
+
+======================== Coin Payments Id ID ( 2 ) ====================
+
+======================== txn_id ( CPFL4VHIH3HITUMM1BZPPSM7KY ) ====================
+
+======================== status ( 1 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+23-12-2021 10:28:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+23-12-2021 10:30:28
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03214
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => a5b43440b527b7691f20643fed11de13
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL1ATW5RGJWM1YHTDT4OY5BP
+)
+
+======================== Coin Payments Id ID ( 3 ) ====================
+
+======================== txn_id ( CPFL1ATW5RGJWM1YHTDT4OY5BP ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== Pendding ====================
+========================Time ====================
+23-12-2021 10:32:22
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+23-12-2021 10:33:25
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+23-12-2021 10:34:22
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03214
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00016
+    [ipn_id] => 1fe7310784aa158837861d37a9c38f01
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.03198
+    [received_amount] => 0.03214
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPFL1ATW5RGJWM1YHTDT4OY5BP
+)
+
+======================== Coin Payments Id ID ( 3 ) ====================
+
+======================== txn_id ( CPFL1ATW5RGJWM1YHTDT4OY5BP ) ====================
+
+======================== status ( 100 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order
+======================== fundsdetails ====================
+
+======================== Success ====================
+========================Time ====================
+23-12-2021 10:43:20
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+23-12-2021 10:44:14
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+23-12-2021 10:54:12
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+23-12-2021 10:59:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+23-12-2021 11:05:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+23-12-2021 11:15:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+23-12-2021 11:30:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+23-12-2021 11:36:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+23-12-2021 11:46:14
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+23-12-2021 12:01:28
+======================== REQUEST data ====================
+Array
+(
+    [address] => n36Mu33kPx5fuypwHkjWQjJQGPKDkCX1mA
+    [amount] => 0.06527000
+    [amounti] => 6527000
+    [currency] => LTCT
+    [id] => CWFL3RARPEAYRDOZERISNBXV2F
+    [ipn_id] => e48fd00c328e8f666c102414ef57e5a1
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => af55833966c2c2e030f71103f3e73f087e036a8e9e56e9e199e87322fadc4ede
+)
+========================Time ====================
+23-12-2021 12:07:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+23-12-2021 01:31:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+23-12-2021 01:47:19
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+23-12-2021 02:08:17
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+23-12-2021 03:32:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+23-12-2021 03:48:13
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+23-12-2021 04:09:29
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+24-12-2021 03:33:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+24-12-2021 03:49:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+24-12-2021 04:11:22
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+24-12-2021 03:34:22
+======================== REQUEST data ====================
+Array
+(
+    [address] => mwZ9nt3FEZTp1FBmX9qPvqPa1dKM5Jn1dq
+    [amount] => 0.12993000
+    [amounti] => 12993000
+    [currency] => LTCT
+    [id] => CWFL74F6NXBLRUOVYQOWYETUCF
+    [ipn_id] => 3e2e1cdfc39ddd29e7f46c9afe40c9ea
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 9d53c6559d394f282b18586af57075b2f094883203ed2e77cab7e323785c4828
+)
+========================Time ====================
+24-12-2021 03:50:32
+======================== REQUEST data ====================
+Array
+(
+    [address] => mvQiwHnU2GWnzA9mvUR6Hn9wmJM3JGjFQ4
+    [amount] => 0.03319000
+    [amounti] => 3319000
+    [currency] => LTCT
+    [id] => CWFL60I4YSFVH1PNVQ0GRCHG4D
+    [ipn_id] => 952ea1706fd992c81cd6236efeee4659
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => c75d27dfccc87bd105c974a79e9b0b3d28b94929d3fe6185a5be5479c769d545
+)
+========================Time ====================
+24-12-2021 04:12:26
+======================== REQUEST data ====================
+Array
+(
+    [address] => my5tKydrguDNkh3YhmHEXV8c2qXgrF15Ls
+    [amount] => 0.03314000
+    [amounti] => 3314000
+    [currency] => LTCT
+    [id] => CWFL4ZSLUNK213CMIAJAZDWWUN
+    [ipn_id] => d0ef5f2b19f54737a4e61d3946bbf7b3
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 6f9335b979cc3a7c7c3b24020c8185c9141e7b296c55043e7730424de39a6a21
+)
+========================Time ====================
+27-12-2021 10:23:20
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.0002
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => swt.test2021@gmail.com
+    [fee] => 1.0E-6
+    [ipn_id] => bfa010abe29056196dc25c77c5ba561f
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPFL2GXFST8GGDHG6NYDNTYT7G
+)
+
+======================== Coin Payments Id ID ( 4 ) ====================
+
+======================== txn_id ( CPFL2GXFST8GGDHG6NYDNTYT7G ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== EROOR REPORT ====================
+Amount is lasser then the order

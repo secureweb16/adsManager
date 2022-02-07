@@ -1,0 +1,67 @@
+========================Time ====================
+14-01-2022 10:12:21
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.00023
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => swt.test2021@gmail.com
+    [fee] => 1.0E-6
+    [ipn_id] => c803b56f8287a5793b364e9b8d2581d0
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA1RHTMVRBQCHWVV8QQ9JB4I
+)
+
+======================== Coin Payments Id ID ( 15 ) ====================
+
+======================== txn_id ( CPGA1RHTMVRBQCHWVV8QQ9JB4I ) ====================
+
+======================== EROOR REPORT ====================
+No Or incorrect merchant id
+======================== status ( 0 ) ====================
+
+======================== Pendding ====================
+========================Time ====================
+14-01-2022 06:44:14
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 10
+    [amount2] => 0.00023
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BTC
+    [email] => swt.test2021@gmail.com
+    [fee] => 1.0E-6
+    [ipn_id] => 02354d3dc3962997bbb39844c1446879
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPGA1RHTMVRBQCHWVV8QQ9JB4I
+)
+
+======================== Coin Payments Id ID ( 15 ) ====================
+
+======================== txn_id ( CPGA1RHTMVRBQCHWVV8QQ9JB4I ) ====================
+
+======================== EROOR REPORT ====================
+No Or incorrect merchant id
+======================== status ( -1 ) ====================
+
+======================== Error ====================
+

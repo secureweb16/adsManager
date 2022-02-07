@@ -1,0 +1,80 @@
+========================Time ====================
+08-01-2022 04:37:14
+======================== REQUEST data ====================
+Array
+(
+    [address] => mgtgZDXtStLWyLJ6QExeoHgnCaY5rkP3nv
+    [amount] => 0.00750792
+    [amounti] => 750792
+    [currency] => LTCT
+    [id] => CWGA3XGMKI92ISOFXF4MNSG9VH
+    [ipn_id] => 7c38cd8730509c97322de5aae7dbc454
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 5ec6e2b5f7e84d15ec27bb9d7fc11ef8f171e0ecb3f82f918bef0fd5bf3ab6c4
+)
+========================Time ====================
+08-01-2022 05:54:14
+======================== REQUEST data ====================
+Array
+(
+    [address] => mgtgZDXtStLWyLJ6QExeoHgnCaY5rkP3nv
+    [amount] => 0.00747199
+    [amounti] => 747199
+    [currency] => LTCT
+    [id] => CWGA7B1V2PG1OKCC7XVDIPOCKN
+    [ipn_id] => 665b5fbe88603f30a1f42376dba09b9e
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => e7ae05cf728200bfe3f9c749c26a71e60e6fc36c0ef8b584de64490ecb638c5b
+)
+========================Time ====================
+08-01-2022 04:38:21
+======================== REQUEST data ====================
+Array
+(
+    [address] => mgtgZDXtStLWyLJ6QExeoHgnCaY5rkP3nv
+    [amount] => 0.00750792
+    [amounti] => 750792
+    [currency] => LTCT
+    [id] => CWGA3XGMKI92ISOFXF4MNSG9VH
+    [ipn_id] => 7c38cd8730509c97322de5aae7dbc454
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 5ec6e2b5f7e84d15ec27bb9d7fc11ef8f171e0ecb3f82f918bef0fd5bf3ab6c4
+)
+========================Time ====================
+08-01-2022 05:55:29
+======================== REQUEST data ====================
+Array
+(
+    [address] => mgtgZDXtStLWyLJ6QExeoHgnCaY5rkP3nv
+    [amount] => 0.00747199
+    [amounti] => 747199
+    [currency] => LTCT
+    [id] => CWGA7B1V2PG1OKCC7XVDIPOCKN
+    [ipn_id] => 665b5fbe88603f30a1f42376dba09b9e
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => e7ae05cf728200bfe3f9c749c26a71e60e6fc36c0ef8b584de64490ecb638c5b
+)

@@ -1,0 +1,576 @@
+========================Time ====================
+28-01-2022 07:50:20
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 100
+    [amount2] => 0.30197
+    [buyer_name] => CoinPayments API
+    [currency1] => USD
+    [currency2] => BNB.ERC20
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.04679
+    [ipn_id] => 7acad7f2e1fd2fc1f124bbb7cb0fedcd
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA5QS7NE8WQUHKLGFSWXTDZ8
+)
+
+======================== Coin Payments Id ID ( 4 ) ====================
+
+======================== txn_id ( CPGA5QS7NE8WQUHKLGFSWXTDZ8 ) ====================
+
+======================== status ( 0 ) ====================
+
+======================== Pendding ====================
+========================Time ====================
+28-01-2022 10:38:19
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 8fe8e100596668a41dcd27a21549a362
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA0O7JM9OYRQWDBAXVAEF3LI
+)
+========================Time ====================
+28-01-2022 10:41:20
+======================== REQUEST data ====================
+Array
+(
+    [address] => msEMDaKfjXx1fJ1DE9sDieYxuQbU7A9gaF
+    [amount] => 0.00569000
+    [amounti] => 569000
+    [currency] => LTCT
+    [id] => CWGA6EZGYTSL8Z93RYR1MMSYPY
+    [ipn_id] => c8853062a3d2f0695948b6bb20cbf5f2
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => a51e2d9ac4809dacd2bf068efaa20580ec2a2a32f11100075c60052b7dfa6c65
+)
+========================Time ====================
+28-01-2022 10:42:13
+======================== REQUEST data ====================
+Array
+(
+    [amount] => 10.00000000
+    [amounti] => 1000000000
+    [currency] => LTCT
+    [fee] => 0.00000000
+    [feei] => 0
+    [fiat_amount] => 1066.75912746
+    [fiat_amounti] => 106675912746
+    [fiat_coin] => USD
+    [from] => 8ac9528d191f8fb3f5b9daa25538c4ae
+    [ipn_id] => e3c1d3ba390d7af3ea78ec4673d34032
+    [ipn_mode] => hmac
+    [ipn_type] => transfer
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => CTGA61CDCMXR758G6UH47PHEXF
+)
+========================Time ====================
+28-01-2022 10:43:13
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 811ddd49dab89f9c40d02eed5f2dd1fe
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.00467
+    [received_amount] => 0.00469
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPGA0O7JM9OYRQWDBAXVAEF3LI
+)
+========================Time ====================
+28-01-2022 10:47:12
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 05e56d6489dc436eb679f68a7602be03
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA0M4CR9JFF4HAJDQKOGPRXZ
+)
+========================Time ====================
+28-01-2022 10:49:12
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 8fe8e100596668a41dcd27a21549a362
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA0O7JM9OYRQWDBAXVAEF3LI
+)
+========================Time ====================
+28-01-2022 10:51:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => n3GsUqf3SBpmj2EDfuCBzueA1w3x91QsLD
+    [amount] => 0.00569000
+    [amounti] => 569000
+    [currency] => LTCT
+    [id] => CWGA7MBKP1IL2J5Y6R89GA9SH8
+    [ipn_id] => 48865c38cba2c3bde777a876cb825a09
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 188877e19dc8d97cdcd484aefd3f0b4b8accda89fb4fd64f2705b31bede51daa
+)
+========================Time ====================
+28-01-2022 10:52:10
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => e10cc638371347cf7f76087cdf808ca1
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.00467
+    [received_amount] => 0.00469
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPGA0M4CR9JFF4HAJDQKOGPRXZ
+)
+========================Time ====================
+28-01-2022 10:52:13
+======================== REQUEST data ====================
+Array
+(
+    [address] => msEMDaKfjXx1fJ1DE9sDieYxuQbU7A9gaF
+    [amount] => 0.00569000
+    [amounti] => 569000
+    [currency] => LTCT
+    [id] => CWGA6EZGYTSL8Z93RYR1MMSYPY
+    [ipn_id] => c8853062a3d2f0695948b6bb20cbf5f2
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => a51e2d9ac4809dacd2bf068efaa20580ec2a2a32f11100075c60052b7dfa6c65
+)
+========================Time ====================
+28-01-2022 10:53:10
+======================== REQUEST data ====================
+Array
+(
+    [amount] => 10.00000000
+    [amounti] => 1000000000
+    [currency] => LTCT
+    [fee] => 0.00000000
+    [feei] => 0
+    [fiat_amount] => 1066.75912746
+    [fiat_amounti] => 106675912746
+    [fiat_coin] => USD
+    [from] => 8ac9528d191f8fb3f5b9daa25538c4ae
+    [ipn_id] => e3c1d3ba390d7af3ea78ec4673d34032
+    [ipn_mode] => hmac
+    [ipn_type] => transfer
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => CTGA61CDCMXR758G6UH47PHEXF
+)
+========================Time ====================
+28-01-2022 10:54:12
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 811ddd49dab89f9c40d02eed5f2dd1fe
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.00467
+    [received_amount] => 0.00469
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPGA0O7JM9OYRQWDBAXVAEF3LI
+)
+========================Time ====================
+28-01-2022 10:58:12
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 05e56d6489dc436eb679f68a7602be03
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA0M4CR9JFF4HAJDQKOGPRXZ
+)
+========================Time ====================
+28-01-2022 11:00:20
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 8fe8e100596668a41dcd27a21549a362
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA0O7JM9OYRQWDBAXVAEF3LI
+)
+========================Time ====================
+28-01-2022 11:00:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => mnru36QyMm465irtSs6XwHsnve3kAeWZwh
+    [amount] => 0.00568000
+    [amounti] => 568000
+    [currency] => LTCT
+    [id] => CWGA3VTG9Q9BVVPZ0ULG6RKTZG
+    [ipn_id] => a861ebeda5d07bf4b9e0aaa0050c60c7
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 17ba7b3369c50f2442472559fe1a18b26012b17355c03f4576ecf781f1cfd5b9
+)
+========================Time ====================
+28-01-2022 11:02:19
+======================== REQUEST data ====================
+Array
+(
+    [address] => n3GsUqf3SBpmj2EDfuCBzueA1w3x91QsLD
+    [amount] => 0.00569000
+    [amounti] => 569000
+    [currency] => LTCT
+    [id] => CWGA7MBKP1IL2J5Y6R89GA9SH8
+    [ipn_id] => 48865c38cba2c3bde777a876cb825a09
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 188877e19dc8d97cdcd484aefd3f0b4b8accda89fb4fd64f2705b31bede51daa
+)
+========================Time ====================
+28-01-2022 11:03:17
+======================== REQUEST data ====================
+Array
+(
+    [address] => msEMDaKfjXx1fJ1DE9sDieYxuQbU7A9gaF
+    [amount] => 0.00569000
+    [amounti] => 569000
+    [currency] => LTCT
+    [id] => CWGA6EZGYTSL8Z93RYR1MMSYPY
+    [ipn_id] => c8853062a3d2f0695948b6bb20cbf5f2
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => a51e2d9ac4809dacd2bf068efaa20580ec2a2a32f11100075c60052b7dfa6c65
+)
+========================Time ====================
+28-01-2022 11:03:17
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => e10cc638371347cf7f76087cdf808ca1
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.00467
+    [received_amount] => 0.00469
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPGA0M4CR9JFF4HAJDQKOGPRXZ
+)
+========================Time ====================
+28-01-2022 11:04:17
+======================== REQUEST data ====================
+Array
+(
+    [amount] => 10.00000000
+    [amounti] => 1000000000
+    [currency] => LTCT
+    [fee] => 0.00000000
+    [feei] => 0
+    [fiat_amount] => 1066.75912746
+    [fiat_amounti] => 106675912746
+    [fiat_coin] => USD
+    [from] => 8ac9528d191f8fb3f5b9daa25538c4ae
+    [ipn_id] => e3c1d3ba390d7af3ea78ec4673d34032
+    [ipn_mode] => hmac
+    [ipn_type] => transfer
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => CTGA61CDCMXR758G6UH47PHEXF
+)
+========================Time ====================
+28-01-2022 11:05:21
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 811ddd49dab89f9c40d02eed5f2dd1fe
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.00467
+    [received_amount] => 0.00469
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPGA0O7JM9OYRQWDBAXVAEF3LI
+)
+========================Time ====================
+28-01-2022 11:09:18
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 05e56d6489dc436eb679f68a7602be03
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA0M4CR9JFF4HAJDQKOGPRXZ
+)
+========================Time ====================
+28-01-2022 11:11:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => mnru36QyMm465irtSs6XwHsnve3kAeWZwh
+    [amount] => 0.00568000
+    [amounti] => 568000
+    [currency] => LTCT
+    [id] => CWGA3VTG9Q9BVVPZ0ULG6RKTZG
+    [ipn_id] => a861ebeda5d07bf4b9e0aaa0050c60c7
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 17ba7b3369c50f2442472559fe1a18b26012b17355c03f4576ecf781f1cfd5b9
+)
+========================Time ====================
+28-01-2022 11:12:18
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => 8fe8e100596668a41dcd27a21549a362
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA0O7JM9OYRQWDBAXVAEF3LI
+)
+========================Time ====================
+28-01-2022 11:14:14
+======================== REQUEST data ====================
+Array
+(
+    [address] => n3GsUqf3SBpmj2EDfuCBzueA1w3x91QsLD
+    [amount] => 0.00569000
+    [amounti] => 569000
+    [currency] => LTCT
+    [id] => CWGA7MBKP1IL2J5Y6R89GA9SH8
+    [ipn_id] => 48865c38cba2c3bde777a876cb825a09
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 188877e19dc8d97cdcd484aefd3f0b4b8accda89fb4fd64f2705b31bede51daa
+)
+========================Time ====================
+28-01-2022 11:14:16
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 0.5
+    [amount2] => 0.00469
+    [buyer_name] => test buyer
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 2.0E-5
+    [ipn_id] => e10cc638371347cf7f76087cdf808ca1
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [net] => 0.00467
+    [received_amount] => 0.00469
+    [received_confirms] => 0
+    [status] => 100
+    [status_text] => Complete
+    [txn_id] => CPGA0M4CR9JFF4HAJDQKOGPRXZ
+)
+========================Time ====================
+28-01-2022 11:14:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => msEMDaKfjXx1fJ1DE9sDieYxuQbU7A9gaF
+    [amount] => 0.00569000
+    [amounti] => 569000
+    [currency] => LTCT
+    [id] => CWGA6EZGYTSL8Z93RYR1MMSYPY
+    [ipn_id] => c8853062a3d2f0695948b6bb20cbf5f2
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => a51e2d9ac4809dacd2bf068efaa20580ec2a2a32f11100075c60052b7dfa6c65
+)

@@ -1,0 +1,295 @@
+<?php
+
+namespace App\Services;
+
+use App\Models\Campaign;
+use App\Models\TelegramGroup;
+use Carbon\Carbon;
+use App\Models\CampaignReport;
+use App\Models\CampaignPublishGroup;
+use App\Models\PublisherReport;
+
+/*secureweb/socialmarketing*/
+use Secureweb\Socialmarketing\SocialMarketing;
+use Secureweb\Socialmarketing\Models\Campaignmessage;
+
+
+class TelegramPush{
+
+	private $group_publish;
+	
+	public function __construct(){
+		$this->group_publish = 5;
+		return $this->fetchCamapign();
+	}
+	/*****************
+	**
+	Campaign Return
+	**
+	***********/
+	public function fetchCamapign(){
+
+		// {{ asset('common/images/campaignUploads/') }}/{{ $campaigns->banner_image }}
+	
+		
+		$CampaignPPC = Campaign::where('campaign_status','1')->where('admin_approval','1')		
+		->orderBy('pay_ppc', 'DESC')
+		->limit(2)
+		->get();
+
+		$averageCost = (isset($CampaignPPC[1]))?$CampaignPPC[1]->pay_ppc:$CampaignPPC[0]->pay_ppc;
+		$averageCost = $averageCost+0.01;
+		update_option_value('average_cost_value',$averageCost);
+		
+		$allcampaign = Campaign::where(function($query) {
+			$query->where('days','=',date('l'));
+			$query->orWhere('days','=','Allday');
+		})->where(function($query) {
+			$query->whereDate('form_date','<=',Carbon::now());
+			$query->whereDate('to_date','>=',Carbon::now());
+			$query->orWhereNull('form_date');
+			$query->orWhereNull('to_date');
+		})->where('campaign_status','1')
+		->where('admin_approval','1')
+		->where('remaing_daily','>',$averageCost)
+		->get();
+
+		return $this->send_campaign_for_publishing($allcampaign);
+	}
+
+	private function send_campaign_for_publishing($allcampaign){
+			
+		$telegram_group_hrs = get_option_value('telegram_group_hrs');		
+		$averageTime	= strtotime(date("Y-m-d H:i:s", strtotime('-'.$telegram_group_hrs.' hours')));
+		// print_r($allcampaign);
+		foreach ($allcampaign as $key => $campaign) {
+			$publishGroupData = CampaignPublishGroup::where('publish_time','<=',$averageTime)
+			->where('campaign_id','=',$campaign->id)
+			->where('clicks','=',0)
+			->get()
+			;
+
+			$publishGroupDataNotClicks = CampaignPublishGroup::where('campaign_id','=',$campaign->id)
+				->where('clicks','=',0)
+				->pluck('telegram_group_id');
+
+
+			$checkPublishOrNOT = CampaignPublishGroup::where('campaign_id','=',$campaign->id)->get();
+
+			if(count($publishGroupData) > 0){
+				$finalpublish = $this->group_publish-count($publishGroupData);				
+				$this->delete_message_form_telegram_group($publishGroupData);			
+				$publishGroup = CampaignPublishGroup::where('publish_time','>=',$averageTime)
+				->where('campaign_id','=',$campaign->id)
+				->pluck('telegram_group_id')
+				->toArray();
+				$telegramGroup = $this->get_teleram_group($publishGroup);
+				if(count($publishGroupData) == $this->group_publish){
+					$this->send_message_telegram_group_process($telegramGroup,$campaign);
+				}else{
+					$this->send_message_telegram_group_process_no_of_groups_publish($telegramGroup,$campaign,$finalpublish);
+				}
+			}else if(count($checkPublishOrNOT) == 0 ){						
+				$publishGroup = array(0);
+				$telegramGroup = $this->get_teleram_group($publishGroup);
+				$this->send_message_telegram_group_process($telegramGroup,$campaign);
+			}else{
+
+				$publishGroupDataClicks = CampaignPublishGroup::where('campaign_id','=',$campaign->id)
+				->where('clicks','=',1)
+				->pluck('telegram_group_id');
+
+				$publishGroupDataNotClicks = CampaignPublishGroup::where('campaign_id','=',$campaign->id)
+				->where('clicks','=',0)
+				->pluck('telegram_group_id');
+
+				if(count($publishGroupDataClicks) <= $this->group_publish && count($publishGroupDataNotClicks) < $this->group_publish ){
+					$finalpublish = $this->group_publish-count($publishGroupDataNotClicks);
+					$telegramGroup = $this->get_teleram_group($publishGroupDataNotClicks);					
+					$this->send_message_telegram_group_process_no_of_groups_publish($telegramGroup,$campaign,$finalpublish);
+				}else if(count($publishGroupDataClicks) == 1 && count($publishGroupDataNotClicks) < $this->group_publish){		
+					$telegramGroup = $this->get_teleram_group($publishGroupDataClicks);					
+					$this->send_message_telegram_group_process_no_of_groups_publish($telegramGroup,$campaign,1);
+				}
+			}
+		}
+	}
+
+	private function get_teleram_group($publishGroup){
+
+		return TelegramGroup::whereNotIn('id',$publishGroup)
+		 ->where('status','1')
+		 ->orderBy('no_of_published', 'ASC')
+		 ->get();
+	
+	}
+
+	private function send_message_telegram_group_process_no_of_groups_publish($telegramGroup,$campaign,$finalpublish){
+		
+		$i = 0;
+		foreach ($telegramGroup as $key => $value) {			
+			if($i == $finalpublish){ break; }
+			$frequency_ads	= strtotime(date("Y-m-d H:i:s", strtotime('-'.$value->frequency_of_ads.' hours')));
+			$publishtime = publish_time_from_publish_group($campaign->id,$value->id);
+			if($frequency_ads >= $publishtime){
+				$unique = time().$i;
+				$this->send_message_on_telegram_group($campaign,$unique,$value);
+				$i++;
+			}
+		}
+	}
+
+	private function send_message_telegram_group_process($telegramGroup,$campaign){
+
+		$i = 0;
+		foreach ($telegramGroup as $key => $value) {			
+			if($i == $this->group_publish){ break; }
+			$frequency_ads	= strtotime(date("Y-m-d H:i:s", strtotime('-'.$value->frequency_of_ads.' hours')));
+			$publishtime = publish_time_from_publish_group($campaign->id,$value->id);
+			if($frequency_ads >= $publishtime){
+				$unique = time().$i;
+				$this->send_message_on_telegram_group($campaign,$unique,$value);
+				$i++;
+			}
+		}
+	}
+
+	private function send_message_on_telegram_group($campaign,$unique,$value){
+
+      $campaignURL = $campaign->tracking_url;
+      $advertiserId = $campaign->advertiser_id;
+
+      $campaignURL = $campaignURL.'/'.$value->publisher_id.'/'.$value->id.'/'.$unique;
+      $message = [
+				'title' => $campaign->campaign_name,
+				'image' => url('common/images/campaignUploads').'/'.$campaign->banner_image,		
+				'link' => $campaignURL,
+				'description' => strip_tags($campaign->description)
+			];
+      $social_marketing = new SocialMarketing('telegram',
+        $message,
+        'send',
+        $value->publisher_id,
+        $advertiserId,
+        $value->id,
+        $campaign->id,
+        $unique,
+        '',
+        '',
+        '',
+        '',
+        $value->telegram_group
+      );
+
+      $response = $social_marketing->sendRequest();
+
+      echo "<pre>";
+      print_r($response);
+      exit;
+ 
+      if(isset($response["ok"]) && $response["ok"] == 1){       
+        
+        Campaign::where('id', '=', $campaign->id)                   
+        ->update([
+          'post_date' => Carbon::now()->toDateString(),
+          'time'      => time(),
+        ]);
+
+        TelegramGroup::where('id', '=', $value->id)
+        ->update([ 'no_of_published' => $value->no_of_published+1 ]);
+
+        $campaignPublishGroup = new CampaignPublishGroup();
+        $campaignPublishGroup->campaign_id = $campaign->id;
+        $campaignPublishGroup->telegram_group_id = $value->id;
+        $campaignPublishGroup->publish_date = date('Y-m-d');
+        $campaignPublishGroup->publish_time = time();
+        $campaignPublishGroup->clicks 		= 0;
+        $campaignPublishGroup->unique_id = $unique;
+        $campaignPublishGroup->save();
+        $this->publisher_report($campaign->id,$value->publisher_id,$value->id);
+        $this->campaign_report($campaign->id,$value->publisher_id,$value->id);
+      }
+	}
+
+	private function publisher_report($campaignid,$publisherid,$group_id){
+      $users = PublisherReport::where('publisher_id', '=', $publisherid)
+      ->where('campaign_id', '=', $campaignid)
+      ->where('group_id', '=', $group_id)
+      ->where('created_at','>=',Carbon::today())
+      ->first();
+
+      if (empty($users)){
+        $reportdata = new PublisherReport();
+        $reportdata->publisher_id   = $publisherid;
+        $reportdata->campaign_id    = $campaignid;
+        $reportdata->no_of_publish  = '1';
+        $reportdata->group_id       = $group_id;
+        $reportdata->save();
+      } else {
+        $report = $users->no_of_publish;
+        PublisherReport::where('publisher_id', '=', $publisherid)
+        ->where('campaign_id', '=', $campaignid)
+        ->where('group_id', '=', $group_id)
+        ->where('created_at','>=',Carbon::today())
+        ->update(['no_of_publish' => $report + 1]);
+      }
+    }
+
+    private function campaign_report($campaignid,$publisher_id,$telegramGroupId){
+	    $campaignReport = CampaignReport::where('campaign_id',$campaignid)->where('telegram_group_id',$telegramGroupId)->first();
+	    if(!empty($campaignReport)){
+	      CampaignReport::where('id', '=', $campaignReport->id)           
+	      ->update(['no_of_published' => $campaignReport->no_of_published + 1]);
+	    }else{
+	      $campaignReport = new CampaignReport();
+	      $campaignReport->campaign_id = $campaignid;
+	      $campaignReport->telegram_group_id = $telegramGroupId;
+	      $campaignReport->publisher_id = $publisher_id;
+	      $campaignReport->no_of_published = 1;
+	      $campaignReport->save();
+	    }
+	  }
+
+
+	private function delete_message_form_telegram_group($publishGroupData){
+
+		foreach ($publishGroupData as $key => $publishGroup) {				
+			$camapignrecords 		= Campaignmessage::where('unique_id',$publishGroup->unique_id)->first();		
+			$telegram_group_id 	= $camapignrecords->telegram_group_id;
+			$group_id 					= $camapignrecords->id;
+			$publisher_id 			= $camapignrecords->publisher_id;
+			$campmeassage_id 		= $camapignrecords->campaigns_id;
+			$messageID 					= $camapignrecords->message_id;
+
+			$groupName 					= TelegramGroup::where('id',$telegram_group_id)->where('publisher_id',$publisher_id)->first();
+			$telegramGroupName 	= $groupName->telegram_group;
+
+			if($telegramGroupName){
+				$social_marketing = new SocialMarketing('telegram',
+					'',
+					'delete',
+					'',
+					'',
+					'',
+					'',
+					'',
+					'',
+					'',
+					'',
+					'',
+					$telegramGroupName, // telegram group
+					'',
+					$messageID,//message id
+					$group_id // telegram group id
+				);          
+				$response = $social_marketing->sendRequest();
+
+				if(isset($response["ok"]) && $response["ok"] == 1){
+					CampaignPublishGroup::where('id', $publishGroup->id)->update(['clicks' => 1]);
+				}
+			}
+		}
+	}
+
+	
+	}

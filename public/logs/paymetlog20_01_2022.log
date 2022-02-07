@@ -1,0 +1,287 @@
+========================Time ====================
+20-01-2022 12:36:21
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03662
+    [buyer_name] => advertiser
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00018
+    [ipn_id] => 74e0846e0e95d6fed1c4565c6f72baf5
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPGA74KAWKLSZYDC1P014VLMIC
+)
+========================Time ====================
+20-01-2022 04:00:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 1.00029122
+    [amounti] => 100029122
+    [currency] => BUSD.BEP20
+    [id] => CWGA2XFKSLS14TWYPC62G7ZMXC
+    [ipn_id] => 974c2ba45c7e36036a70b6137fd5aa29
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+20-01-2022 05:49:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => n245xPxVpmxrVNhgy1eu7ksPdK16NTXMsu
+    [amount] => 0.73392000
+    [amounti] => 73392000
+    [currency] => LTCT
+    [id] => CWGA1IQ5CD7ARC2UNSIRAG0NFN
+    [ipn_id] => 2acc0455201577282713027c10369d3b
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 285ea73a4fbc480b42cbbfcad3b40850bb59ef8d9b519a65b2ca762dc4370013
+)
+========================Time ====================
+20-01-2022 11:39:14
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03662
+    [buyer_name] => advertiser
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00018
+    [ipn_id] => 9d00241af6abcb1d674ab6287a624ef2
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => 0
+    [status_text] => Waiting for buyer funds...
+    [txn_id] => CPGA74KAWKLSZYDC1P014VLMIC
+)
+========================Time ====================
+20-01-2022 12:37:20
+======================== REQUEST data ====================
+Array
+(
+    [amount1] => 5
+    [amount2] => 0.03662
+    [buyer_name] => advertiser
+    [currency1] => USD
+    [currency2] => LTCT
+    [email] => swt.test2021@gmail.com
+    [fee] => 0.00018
+    [ipn_id] => 74e0846e0e95d6fed1c4565c6f72baf5
+    [ipn_mode] => hmac
+    [ipn_type] => api
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [received_amount] => 0
+    [received_confirms] => 0
+    [status] => -1
+    [status_text] => Cancelled / Timed Out
+    [txn_id] => CPGA74KAWKLSZYDC1P014VLMIC
+)
+========================Time ====================
+20-01-2022 04:02:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x873D4AC32a42C9bDd5AED11D6985295b1B511BDC
+    [amount] => 1.00029122
+    [amounti] => 100029122
+    [currency] => BUSD.BEP20
+    [id] => CWGA2XFKSLS14TWYPC62G7ZMXC
+    [ipn_id] => 974c2ba45c7e36036a70b6137fd5aa29
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+20-01-2022 05:50:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => n245xPxVpmxrVNhgy1eu7ksPdK16NTXMsu
+    [amount] => 0.73392000
+    [amounti] => 73392000
+    [currency] => LTCT
+    [id] => CWGA1IQ5CD7ARC2UNSIRAG0NFN
+    [ipn_id] => 2acc0455201577282713027c10369d3b
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => 285ea73a4fbc480b42cbbfcad3b40850bb59ef8d9b519a65b2ca762dc4370013
+)
+========================Time ====================
+20-01-2022 06:51:24
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x07A050435c6C2569902f3c6159866a7bda50Fb8E
+    [amount] => 1.00033514
+    [amounti] => 100033514
+    [currency] => BUSD.BEP20
+    [id] => CWGA0KGWH10E0X3JYQHIRYYSVK
+    [ipn_id] => e4e386ee7fc6794ec524cf0c8e47400d
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+20-01-2022 07:02:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x07A050435c6C2569902f3c6159866a7bda50Fb8E
+    [amount] => 1.00033514
+    [amounti] => 100033514
+    [currency] => BUSD.BEP20
+    [id] => CWGA0KGWH10E0X3JYQHIRYYSVK
+    [ipn_id] => e4e386ee7fc6794ec524cf0c8e47400d
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+20-01-2022 07:13:19
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x07A050435c6C2569902f3c6159866a7bda50Fb8E
+    [amount] => 1.00033514
+    [amounti] => 100033514
+    [currency] => BUSD.BEP20
+    [id] => CWGA0KGWH10E0X3JYQHIRYYSVK
+    [ipn_id] => e4e386ee7fc6794ec524cf0c8e47400d
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+20-01-2022 07:24:17
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x07A050435c6C2569902f3c6159866a7bda50Fb8E
+    [amount] => 1.00033514
+    [amounti] => 100033514
+    [currency] => BUSD.BEP20
+    [id] => CWGA0KGWH10E0X3JYQHIRYYSVK
+    [ipn_id] => e4e386ee7fc6794ec524cf0c8e47400d
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+20-01-2022 07:55:16
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x07A050435c6C2569902f3c6159866a7bda50Fb8E
+    [amount] => 1.00033514
+    [amounti] => 100033514
+    [currency] => BUSD.BEP20
+    [id] => CWGA0KGWH10E0X3JYQHIRYYSVK
+    [ipn_id] => e4e386ee7fc6794ec524cf0c8e47400d
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+20-01-2022 08:26:14
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x07A050435c6C2569902f3c6159866a7bda50Fb8E
+    [amount] => 1.00033514
+    [amounti] => 100033514
+    [currency] => BUSD.BEP20
+    [id] => CWGA0KGWH10E0X3JYQHIRYYSVK
+    [ipn_id] => e4e386ee7fc6794ec524cf0c8e47400d
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)
+========================Time ====================
+20-01-2022 10:27:23
+======================== REQUEST data ====================
+Array
+(
+    [address] => 0x07A050435c6C2569902f3c6159866a7bda50Fb8E
+    [amount] => 1.00033514
+    [amounti] => 100033514
+    [currency] => BUSD.BEP20
+    [id] => CWGA0KGWH10E0X3JYQHIRYYSVK
+    [ipn_id] => e4e386ee7fc6794ec524cf0c8e47400d
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => 9a2585ff8b0cc4acecd69ae2be1ac58d
+    [note] => Auto Payout
+    [status] => -1
+    [status_text] => Cancelled
+    [txn_id] => 
+)

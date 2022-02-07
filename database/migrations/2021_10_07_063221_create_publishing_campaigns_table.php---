@@ -1,0 +1,50 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreatePublishingCampaignsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+      Schema::create('publishing_campaigns', function (Blueprint $table) {
+        $table->id();
+        $table->string('telegram_id')->nullable();
+
+        $table->unsignedBigInteger('publisher_id')->nullable();
+        $table->foreign('publisher_id')->references('id')->on('users')->onDelete('CASCADE');
+
+        $table->unsignedBigInteger('advertiser_id')->nullable();
+        $table->foreign('advertiser_id')->references('id')->on('users')->onDelete('CASCADE');
+
+        $table->unsignedBigInteger('campaign_id')->nullable();
+        $table->foreign('campaign_id')->references('id')->on('campaigns')->onDelete('CASCADE');
+
+        $table->string('publishing_url')->nullable();
+        $table->enum('status', ['0','1','2','3'])->nullable()->comment('0:Pause,1:Approve,2:Stop,3:Pendding');            
+        $table->time('publish_time')->nullable();
+        $table->time('next_publish_time')->nullable();
+        $table->float('total_funds')->nullable();
+        $table->float('remaing_funds')->nullable();
+        $table->float('average_cost')->nullable();
+
+        $table->timestamps();
+      });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+      Schema::dropIfExists('publishing_campaigns');
+    }
+  }

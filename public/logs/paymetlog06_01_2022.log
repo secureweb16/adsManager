@@ -1,0 +1,19 @@
+========================Time ====================
+06-01-2022 11:06:15
+======================== REQUEST data ====================
+Array
+(
+    [address] => mrLNgFri3wbQCf5jsEjWRKgCAzbganMb9i
+    [amount] => 0.03477000
+    [amounti] => 3477000
+    [currency] => LTCT
+    [id] => CWGA4LWDPPPHBEMTTX6JJKHT5L
+    [ipn_id] => 846c4ea17ba189a095a941b7d9e41dac
+    [ipn_mode] => hmac
+    [ipn_type] => withdrawal
+    [ipn_version] => 1.0
+    [merchant] => d26d420bc8b86467dee3edc096bc94f2
+    [status] => 2
+    [status_text] => Complete
+    [txn_id] => fcff0ebbfba641663c23838bacfbf7d0603e39f5639bcc78a8264a9383d6ebd8
+)
