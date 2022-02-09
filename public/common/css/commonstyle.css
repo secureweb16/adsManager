@@ -1213,3 +1213,7 @@ th.sorting_asc, th.sorting {
         left: -10px;
     }
 }
+
+.select2-container.select2-container--default.select2-container--open li{
+    color: #000 !important;
+}

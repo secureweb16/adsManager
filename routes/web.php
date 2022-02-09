@@ -36,21 +36,6 @@ Route::get('/', function () {
 	return redirect()->route('login');
 });
 
-Route::get('/info', function () {
-	echo date_default_timezone_get();
-	echo date('Y-m-d H:i:s l');
-	exit;
-	$ipaddress = getenv("REMOTE_ADDR") ;
- echo "Your IP Address is " . $ipaddress;
-	// echo $computerId = $_SERVER['HTTP_USER_AGENT'].$_SERVER['LOCAL_ADDR'].$_SERVER['LOCAL_PORT'].$_SERVER['REMOTE_ADDR'];
-	// echo request()->getClientIp();
-	// echo phpinfo(); 
-});
-
-Route::get('/api-callback', function () {
-	return view('telegram_api_callback');
-});
-
 Route::get('/check-info', function () {
 	echo "<pre>";
 	// new WeeklyReportGenerate();
@@ -114,7 +99,6 @@ Route::get('/csv/{uuid}/download', [HomeController::class,'download'])->name('cs
 Route::prefix('admin')->name('admin.')->middleware('isAdmin')->group(function () {
 
 	Route::get('/dashboard', [Admin\AdminController::class,'index'])->name('index');
-
 	Route::get('/settings', [Admin\SettingsController::class,'index'])->name('index');
 	Route::post('/settings/save', [Admin\SettingsController::class,'save'])->name('settings.save');
 	Route::get('/settings/email', [Admin\SettingsController::class,'save_email_view'])->name('settings.email');
@@ -122,38 +106,35 @@ Route::prefix('admin')->name('admin.')->middleware('isAdmin')->group(function ()
 	/*Route::get('/settings/hours', [Admin\SettingsController::class,'save_hours_view'])->name('settings.hours');*/
 	Route::post('/settings/save/hours', [Admin\SettingsController::class,'save_hours'])->name('settings.save.hours');
 	Route::get('/settings/publisherpay', [Admin\SettingsController::class,'publisherpay_view'])->name('settings.publisherpay');
-	Route::post('/settings/publisherpay', [Admin\SettingsController::class,'publisherpay'])->name('settings.publisherpay');	
-	
+	Route::post('/settings/publisherpay', [Admin\SettingsController::class,'publisherpay'])->name('settings.publisherpay');
 	Route::post('/update-campaign',[Admin\CampaignController::class,'campaign_approvel']);
 	Route::post('/campaign-view',[Admin\CampaignController::class,'campaign_view']);
-	
 	Route::post('/user/save',[Admin\AdminUserController::class,'save'])->name('user.save');
 	Route::post('/user/update',[Admin\AdminUserController::class,'update'])->name('user.update');
 	Route::get('/user/delete/{id}',[Admin\AdminUserController::class,'delete'])->name('user.destroy');
-	
 	Route::get('/advertisers/trash',[Admin\AdminAdvertiserController::class,'trash'])->name('advertisers.trash');
 	Route::get('/advertisers/restore/{id}',[Admin\AdminAdvertiserController::class,'restore'])->name('advertisers.restore');
 	Route::get('/advertisers/funds',[Admin\AdminAdvertiserController::class,'funds_view'])->name('advertisers.funds');
 	Route::post('/advertisers/funds',[Admin\AdminAdvertiserController::class,'funds_add'])->name('advertisers.funds');
 	Route::get('/advertisers/campaigns/{id}',[Admin\AdminAdvertiserController::class,'campaigns'])->name('advertisers.campaigns');
-
 	Route::get('/publishers/trash',[Admin\AdminPublisherController::class,'trash'])->name('publishers.trash');
 	Route::get('/publishers/restore/{id}',[Admin\AdminPublisherController::class,'restore'])->name('publishers.restore');
 	Route::get('/publishers/groups',[Admin\AdminPublisherController::class,'all_groups'])->name('publishers.groups');
 	Route::post('/publishers/groupStatus',[Admin\AdminPublisherController::class,'group_status_update']);
 	Route::get('/publishers/delete/{id}',[Admin\AdminPublisherController::class,'groups_delete'])->name('publishers.delete');
-
 	Route::get('/publishers/reports/{id}',[Admin\AdminPublisherController::class,'reports'])->name('publishers.reports');
 	Route::get('/publishers/payments/{id}',[Admin\AdminPublisherController::class,'payments'])->name('publishers.payments');
-	
 	Route::get('/export',[Admin\ImportExportController::class,'ecport_view'])->name('export.csv');
 	Route::post('/export',[Admin\ImportExportController::class,'ecport_csv_file'])->name('export.csv');
 	Route::get('/import',[Admin\ImportExportController::class,'import_csv_file'])->name('import.csv');
 	Route::post('/import',[Admin\ImportExportController::class,'import_publisher_csv'])->name('import.report.csv');
 	Route::get('/markpaid/{id}',[Admin\ImportExportController::class,'mark_paid'])->name('markpaid');
-	
-	Route::get('/campaigns/approvedlist',[Admin\CampaignController::class,'approved_list'])->name('campaign.approvelist');		
-	Route::get('/campaigns/pendinglist',[Admin\CampaignController::class,'pending_list'])->name('campaign.pendinglist');	
+	Route::get('/campaigns/approvedlist',[Admin\CampaignController::class,'approved_list'])->name('campaign.approvelist');
+	Route::get('/campaigns/pendinglist',[Admin\CampaignController::class,'pending_list'])->name('campaign.pendinglist');
+
+	Route::get('/tiers/trash',[Admin\TierController::class,'tiers_trash'])->name('tiers.trash');
+	Route::get('/tiers/restore/{id}',[Admin\TierController::class,'tiers_restore'])->name('tiers.restore');
+	Route::delete('/tiers/trash/delete/{id}',[Admin\TierController::class,'tiers_trash_delete'])->name('tiers.trash.delete');
 
 	Route::resources([
 		'campaigns' 	=> Admin\CampaignController::class,
@@ -229,16 +210,14 @@ Route::prefix('advertiser')->name('advertiser.')->middleware(['isAdvertiser','au
 	Route::get('/campaigns/delete/{id}', [Advertiser\CampaignController::class,'delete'])->name('campaigns.delete');
 	Route::get('/campaigns/trash', [Advertiser\CampaignController::class,'trash_campaign'])->name('campaigns.trash');
 	Route::get('/campaigns/restore/{id}', [Advertiser\CampaignController::class,'restore_campaign'])->name('campaigns.restore');
-	Route::get('/campaigns/deletepermanent/{id}', [Advertiser\CampaignController::class,'delete_campaign_permanent'])->name('campaigns.deletepermanent');
-	
+	Route::get('/campaigns/deletepermanent/{id}', [Advertiser\CampaignController::class,'delete_campaign_permanent'])->name('campaigns.deletepermanent');	
 	Route::post('/remove-a', [Advertiser\CampaignController::class,'remove_anchar_tag'])->name('remove.a');
-
-	Route::post('/update-campaign',[Advertiser\CampaignController::class,'campaign_status_update']);
-	
+	Route::post('/update-campaign',[Advertiser\CampaignController::class,'campaign_status_update']);	
 	Route::post('/get-campaign-clicks',[Advertiser\AdvertiserController::class,'get_camapign_clicks_by_date']);
-
 	Route::get('/funds/success',[Advertiser\FundsController::class,'funds_success']);
 	Route::get('/funds/cancle',[Advertiser\FundsController::class,'funds_cancle']);
+
+	Route::post('/tire-cpc', [Advertiser\CampaignController::class,'tire_cpc'])->name('tire.cpc');
 	
 	Route::resources([
 		'funds' => Advertiser\FundsController::class,

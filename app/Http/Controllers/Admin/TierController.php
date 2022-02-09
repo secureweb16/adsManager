@@ -42,10 +42,7 @@ class TierController extends Controller
      */
     public function store(Request $request)
     { 
-      /*echo "<pre>";
-      print_r($request->all());      
-      echo $data;
-      exit;*/
+
       $validated = $request->validate([
         'tier_name'   => 'required',
         'publisher'   => 'required',
@@ -68,7 +65,7 @@ class TierController extends Controller
         $tierpublisher->payout        = $request->get('payout');
         $tierpublisher->save();
       }
-      return redirect()->back()->with(['success'=>'Tier created successfully']);
+      return redirect()->route('admin.tiers.index')->with(['success'=>'Tier created successfully']);
     }
 
     /**
@@ -144,6 +141,29 @@ class TierController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $id = decrypt($id);
+      TierPublisher::where('tier_id',$id)->delete();      
+      $tier = Tier::findOrFail($id);
+      $tier->publisher = null;
+      $tier->save();
+      $tier->delete();
+      return redirect()->back()->with('success', 'Tier moved in trash.');
+    }
+
+    public function tiers_trash(){
+      $alltier = Tier::onlyTrashed()->get();
+      return view('admin.tiers.trash',compact('alltier'));
+    }
+
+    public function tiers_restore($id){
+      $tier = Tier::onlyTrashed()->find(decrypt($id));
+      $tier->restore();
+      return redirect()->back()->with('success', 'Tier restore successfully');
+    }
+
+    public function tiers_trash_delete($id){
+      $id = decrypt($id);      
+      Tier::onlyTrashed()->find($id)->forceDelete();
+      return redirect()->back()->with('success', 'Tier deleted successfully');
     }
 }

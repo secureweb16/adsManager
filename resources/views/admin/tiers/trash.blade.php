@@ -8,12 +8,9 @@
     <div class="title_right">
       <div class="col-md-4 col-sm-4 form-group pull-right ">
         <div class="input-group">
-          <a href="{{route('admin.tiers.create')}}">
-            <button type="button" class="btn btn-primary btn-sm">Add New</button>
-          </a> 
-          <a href="{{route('admin.tiers.trash')}}">
-            <button type="button" class="btn btn-primary btn-sm">Trash</button>
-          </a>         
+          <a href="{{route('admin.tiers.index')}}">
+            <button type="button" class="btn btn-primary btn-sm">All Tiers</button>
+          </a>
         </div>
       </div>
     </div>
@@ -36,7 +33,6 @@
               <tr>
                 <th>ID</th>
                 <th>Tier Name</th>
-                <th>Publisher</th>
                 <th>Minimum CPC</th>
                 <th>Payout</th>
                 <th>Action</th>
@@ -47,25 +43,16 @@
               @forelse($alltier as $tier)
               <tr>
                 <th scope="row"> {{ $i }} </th>
-                <td> {{ $tier->tier_name }} </td>
-                <td> @php 
-                  $publisher = str_replace("[","",$tier->publisher);
-                  $publisher = str_replace("]","",$publisher);
-                  $publisher = explode(",",$publisher);                  
-                @endphp  
-                @foreach($publisher as $pub)
-                  {{ UserEmail($pub) }} <br/>
-                @endforeach
-                 </td>
+                <td> {{ $tier->tier_name }} </td>                
                 <td> {{ $tier->minimun_cpc }} </td>
                 <td> {{ $tier->payout }} </td>
                 <td>
                   <button type="button" class="btn btn-warning btn-sm">
-                    <a href="{{ route('admin.tiers.edit',encrypt($tier->id)) }}" class="text-white">Edit</a>
+                    <a href="{{ route('admin.tiers.restore',encrypt($tier->id)) }}" class="text-white">Restore</a>
                   </button>
-                  <form action="{{ route('admin.tiers.destroy',encrypt($tier->id)) }}" method="post">
+                  <form action="{{ route('admin.tiers.trash.delete',encrypt($tier->id)) }}" method="post">
                     @csrf {{method_field('DELETE')}}
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-danger">Delete Permanent</button>
                   </form>
                 </td>
               </tr>
