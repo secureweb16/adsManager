@@ -8,6 +8,9 @@ use App\Models\CampaignTracking;
 use App\Models\FundsDetails;
 use App\Models\PublisherReport;
 use App\Models\CampaignFund;
+use App\Models\CampaignPublishGroup;
+use App\Models\TelegramGroup;
+use App\Models\Tier;
 use Auth;
 use DB;
 use App\Notifications\CampaignCreateNotification as campaignNotification;
@@ -15,8 +18,7 @@ use App\Notifications\CampaignCreateNotification as campaignNotification;
 /*secureweb/socialmarketing*/
 use Secureweb\Socialmarketing\SocialMarketing;
 use Secureweb\Socialmarketing\Models\Campaignmessage;
-use App\Models\CampaignPublishGroup;
-use App\Models\TelegramGroup;
+
 
 class CampaignController extends Controller
 { 
@@ -59,12 +61,16 @@ class CampaignController extends Controller
 
   public function add_campaign_view()
   {
-    return view('advertiser.campaign.create');
+    $alltier = Tier::get();
+    return view('advertiser.campaign.create',compact('alltier'));
   }  
 
   public function add_campaign(Request $request)
   {
-    $mincpc = get_option_value('average_min_CPC_bid');
+
+    $data = $request->get('campaign_tire');
+    $mincpc = ($data == 0)?get_option_value('average_min_CPC_bid'):$this->tire_cpc_controller($request->get('campaign_tire'));
+
     $request->validate([
       'campaign_name'   => 'required',
       'campaign_type'   => 'required',
@@ -100,9 +106,10 @@ class CampaignController extends Controller
       $payDaily = ($campaign_budget >= $request->get('pay_daily'))?$request->get('pay_daily'):$campaign_budget;
 
       $campaign   = new  Campaign();
-      $campaign->headline         = $request->get('headline');    
-      $campaign->campaign_name    = $request->get('campaign_name');    
-      $campaign->campaign_type    = implode(',',$request->get('campaign_type'));    
+      $campaign->headline         = $request->get('headline');
+      $campaign->tire_id          = $request->get('campaign_tire');
+      $campaign->campaign_name    = $request->get('campaign_name');
+      $campaign->campaign_type    = implode(',',$request->get('campaign_type'));
       $campaign->advertiser_id    = $advertiser_id;
       $campaign->campaign_budget  = $campaign_budget;
       $campaign->pay_ppc          = $request->get('pay_ppc');
@@ -110,13 +117,10 @@ class CampaignController extends Controller
       $campaign->remaing_total    = $campaign_budget-$payDaily;
       $campaign->remaing_daily    = $request->get('pay_daily');
       $campaign->landing_url      = $request->get('landing_url');
-      $campaign->tracking_url     = url('/telegram').'/'.$traking_id.'/'.$utmf;;
+      $campaign->tracking_url     = url('/telegram').'/'.$traking_id.'/'.$utmf;
       $campaign->description      = $request->get('description');
       $campaign->banner_image     = $imageName;
-      $campaign->button_text      = $request->get('button_text');
-      // $campaign->days             = $request->get('days');
-      // $campaign->form_date        = ($request->get('from_date') != '')?date('Y-m-d H:i:s',strtotime($request->get('from_date'))):null;
-      // $campaign->to_date          = ($request->get('to_date') != '')?date('Y-m-d H:i:s',strtotime($request->get('to_date'))):null;
+      $campaign->button_text      = $request->get('button_text');      
       $campaign->admin_approval   = '0';
       $campaign->campaign_status  = '0';
       $campaign->save();
@@ -141,8 +145,7 @@ class CampaignController extends Controller
         $remaningfunds = $chekFunds->remaning_funds-$campaign_budget;
         FundsDetails::where('user_id', $advertiser_id)->update(['spent_funds' => $campaign_budget,'remaning_funds'=>$remaningfunds]);
         return redirect()->route('advertiser.campaigns.edit',encrypt($campaign->id))->with('message', 'Campaign created!');
-      }
-      // return redirect()->route('advertiser.campiagns')->with(['message'=> 'Campaign created!','error'=> 'Funds insufficient!']);
+      }      
     }
     return redirect()->route('advertiser.campiagns')->with('error','Campaign is not created due to funds insufficient!');
   }
@@ -183,12 +186,16 @@ class CampaignController extends Controller
   public function edit($id){
     $id = decrypt($id);
     $campaigns = Campaign::findOrFail($id);
-    return view('advertiser.campaign.edit', compact('campaigns'));
+    $alltier = Tier::get();
+    return view('advertiser.campaign.edit', compact('campaigns','alltier'));
   }
 
   public function update_campaign(Request $request)
   {
-    $mincpc = get_option_value('average_min_CPC_bid');
+
+    $data =$request->get('campaign_tire');
+    $mincpc = ($data == 0)?get_option_value('average_min_CPC_bid'):$this->tire_cpc_controller($request->get('campaign_tire'));
+
     $request->validate([
       'campaign_name'   => 'required',
       'campaign_type'   => 'required',
@@ -222,6 +229,7 @@ class CampaignController extends Controller
     $payDaily = ($campaign->campaign_budget >= $request->get('pay_daily'))?$request->get('pay_daily'):$campaign->campaign_budget;
 
     $campaign->headline         = $request->get('headline');       
+    $campaign->tire_id          = $request->get('campaign_tire');
     $campaign->campaign_name    = $request->get('campaign_name');
     $campaign->campaign_type    = implode(',',$request->get('campaign_type'));
     $campaign->pay_ppc          = $request->get('pay_ppc');
@@ -230,10 +238,7 @@ class CampaignController extends Controller
     $campaign->landing_url      = $request->get('landing_url');
     $campaign->description      = $request->get('description');
     $campaign->banner_image     = $imageName;
-    $campaign->button_text      = $request->get('button_text');
-    // $campaign->days             = $request->get('days');
-    // $campaign->form_date        = ($request->get('from_date') != '')?date('Y-m-d H:i:s',strtotime($request->get('from_date'))):null;
-    // $campaign->to_date          = ($request->get('to_date') != '')?date('Y-m-d H:i:s',strtotime($request->get('to_date'))):null;
+    $campaign->button_text      = $request->get('button_text');    
     $campaign->admin_approval   = '0';
     $campaign->save();
     
@@ -257,13 +262,12 @@ class CampaignController extends Controller
 
   private function delete_message_on_telegram($publishcampaign){
     foreach ($publishcampaign as $key => $publishGroup) {              
-      $camapignrecords   = Campaignmessage::where('unique_id',$publishGroup->unique_id)->first();        
+      $camapignrecords   = Campaignmessage::where('unique_id',$publishGroup->unique_id)->first();
       $telegram_group_id = $camapignrecords->telegram_group_id;
       $group_id          = $camapignrecords->id;
       $publisher_id      = $camapignrecords->publisher_id;
       $campmeassage_id   = $camapignrecords->campaigns_id;
       $messageID         = $camapignrecords->message_id;
-
       $groupName         = TelegramGroup::where('id',$telegram_group_id)->where('publisher_id',$publisher_id)->first();
       $telegramGroupName = $groupName->telegram_group;
 
@@ -280,11 +284,11 @@ class CampaignController extends Controller
           '',
           '',
           '',
-            $telegramGroupName, // telegram group
-            '',
-            $messageID,//message id
-            $group_id // telegram group id
-          );          
+          $telegramGroupName, // telegram group
+          '',
+          $messageID,//message id
+          $group_id // telegram group id
+        );          
         $response = $social_marketing->sendRequest();
 
         if(isset($response["ok"]) && $response["ok"] == 1){
@@ -385,6 +389,16 @@ class CampaignController extends Controller
 
   public function remove_anchar_tag(){
     echo preg_replace("/<\/?a( [^>]*)?>/i", "", $_REQUEST['editorContent']);
+  }
+
+  public function tire_cpc(Request $request){
+    $tier = Tier::findOrFail($request->get('tireid'));
+    return $tier->minimun_cpc;
+  }
+
+  public function tire_cpc_controller($id){
+    $tier = Tier::findOrFail($id);
+    return $tier->minimun_cpc;
   }
 
 }

@@ -1182,6 +1182,83 @@ th.sorting_asc, th.sorting {
 .admin.inactive .adminstatus,.admin .checkverify{
     pointer-events: none;
 }
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border: 1px solid rgb(255 255 255 / 15%);
+}
+.select2-container--default .select2-selection--multiple{
+    background: #221322;
+    border: 1px solid rgb(255 255 255 / 15%);
+}
+.select2-container--default .select2-results>.select2-results__options {
+    background: #221322;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background: #221322;
+}
+
+.select2-container--default .select2-results__option--selected,.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #504250;
+}
+
+
+/*---- Radio button ----*/
+
+
+.cmpgntire {
+    margin: 0 5px;
+}
+
+
+/* Hide the browser's default radio button */
+.cmpgntire label{
+    padding: 0 0 0 30px;
+    font-size: 16px;
+    color: #000;
+    position: relative;    
+}
+.cmpgntire input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.cmpgntire span.checkmark{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;    
+    border: 2px solid #dd730a;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.cmpgntire input:checked + span.checkmark{
+    background: #dd730a;
+}
+
+.cmpgntire span.checkmark::before{
+    width: 10px;
+    height: 10px;
+    display: block;
+    content: "";
+    background: #fff;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+}
+.cmpgntire input:checked + span.checkmark::before{
+    visibility: visible;
+    opacity: 1;
+}
+/*---- Responsive ----*/
 @media(max-width: 767px){
     .createcompnpge .preview-data {
         margin-top: 40px;
@@ -1212,8 +1289,4 @@ th.sorting_asc, th.sorting {
         top: -10px;
         left: -10px;
     }
-}
-
-.select2-container.select2-container--default.select2-container--open li{
-    color: #000 !important;
 }

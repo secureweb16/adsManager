@@ -58,7 +58,7 @@
                   <select class="select2 form-control" multiple="multiple" name="publisher[]">
                     <option value=""> Select Publisher </option>
                     @foreach($allpublisher as $publisher)
-                      <option value="{{ $publisher->id }}" @if(!empty(old()) && in_array($publisher->id,$publisherOld)) selected @endif>{{ $publisher->email }}</option>
+                    <option value="{{ $publisher->id }}" @if(!empty(old()) && in_array($publisher->id,$publisherOld)) selected @endif>{{ $publisher->email }}</option>
                     @endforeach
                   </select>                  
                 </div>
@@ -109,11 +109,11 @@
 </div>
 
 <script>
-$(document).ready(function() {
-  $('.select2').select2({
-    tags: false,
-    tokenSeparators: [',', ' ']
+  $(document).ready(function() {
+    $('.select2').select2({
+      tags: false,
+      tokenSeparators: [',', ' ']
+    });
   });
-});
 </script>
 @endsection

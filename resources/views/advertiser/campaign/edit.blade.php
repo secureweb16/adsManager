@@ -20,7 +20,7 @@ print_r($campaigns);
         </div>
         <div class="x_content">
           <br />
-        
+
           <form method="post" enctype=multipart/form-data action="{{route('advertiser.campaigns.update')}}">
             @csrf
             @php $campaignType = explode(',',$campaigns->campaign_type); @endphp
@@ -30,29 +30,61 @@ print_r($campaigns);
               <div class="col-md-9 col-sm-9">
                 <div class="cmpgntypes">
                   <div class="row">
-                      <div class="col-md-4">
-                          <div class="cmpgntype">
-                              <input type="checkbox" name="campaign_type[]" value="Telegram" @if(in_array('Telegram',$campaignType)) checked @endif>
-                              <label for="telegram"> Telegram </label>
-                          </div>
+                    <div class="col-md-4">
+                      <div class="cmpgntype">
+                        <input type="checkbox" name="campaign_type[]" value="Telegram" @if(in_array('Telegram',$campaignType)) checked @endif>
+                        <label for="telegram"> Telegram </label>
                       </div>
-                      <div class="col-md-4">
-                          <div class="cmpgntype disabled">
-                              <input type="checkbox" name="campaign_type[]" value="Twitter" @if(in_array('Twitter',$campaignType)) checked @endif disabled>
-                              <label for="twitter"> Twitter Coming Soon </label>
-                          </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="cmpgntype disabled">
+                        <input type="checkbox" name="campaign_type[]" value="Twitter" @if(in_array('Twitter',$campaignType)) checked @endif disabled>
+                        <label for="twitter"> Twitter Coming Soon </label>
                       </div>
-                      <div class="col-md-4">
-                          <div class="cmpgntype disabled">
-                              <input type="checkbox" name="campaign_type[]" value="Lock screen ads"  @if(in_array('Lock screen ads',$campaignType)) checked @endif disabled>
-                              <label for="lock_screen_ads"> Lock screen ads Coming Soon </label>
-                          </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="cmpgntype disabled">
+                        <input type="checkbox" name="campaign_type[]" value="Lock screen ads"  @if(in_array('Lock screen ads',$campaignType)) checked @endif disabled>
+                        <label for="lock_screen_ads"> Lock screen ads Coming Soon </label>
                       </div>
+                    </div>
                   </div>
                 </div>
                 @if ($errors->has('campaign_type')) 
                 <div class="error-custom"> {{$errors->first('campaign_type') }} </div>
                 @endif
+              </div>
+            </div>
+
+            <div class="item form-group">
+              <label class="col-form-label col-md-3 col-sm-3 label-align"> Campaign Tier </label>
+              <div class="col-md-9 col-sm-9">
+                <div class="cmpgntypes">
+                  <ul>
+                    <li>
+                      <div class="cmpgntire">
+                        <div class="radio-fields">
+                          <label for="telegram"> None
+                            <input type="radio" name="campaign_tire" value="0" checked >
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    @foreach($alltier as $tier)
+                    <li>
+                      <div class="cmpgntire">
+                        <div class="radio-fields">
+                          <label for="telegram"> {{ $tier->tier_name }} 
+                            <input type="radio" name="campaign_tire" value="{{$tier->id}}" data-id="{{$tier->id}}" @if($tier->id == $campaigns->tire_id ) checked @endif>
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    @endforeach
+                  </ul>                   
+                </div>
               </div>
             </div>
 
@@ -76,16 +108,6 @@ print_r($campaigns);
               </div>
             </div>
 
-            <!-- <div class="item form-group">
-              <label class="col-form-label col-md-3 col-sm-3 label-align"> Other Description <span class="required">*</span> </label>
-              <div class="col-md-9 col-sm-9">                
-                <textarea name="other_description" id="other_description">{{ $campaigns->other_description }}</textarea>
-                @if ($errors->has('other_description')) 
-                <div class="error-custom"> {{$errors->first('other_description') }} </div>
-                @endif
-              </div>
-            </div> -->
-
             <div class="item form-group">
               <label class="col-form-label col-md-3 col-sm-3 label-align" for="campaign_budget" >Campaign Budget <span class="required">*</span></label>
               <div class="col-md-9 col-sm-9 add-doller">
@@ -101,7 +123,7 @@ print_r($campaigns);
               <label class="col-form-label col-md-3 col-sm-3 label-align"> <span class="averagecpc">Average PPC Bid: $<span id="average">{{ get_option_value('average_cost_value') }}</span> </span>, CPC Bid <span class="required">*</span> </label>
               <div class="col-md-9 col-sm-9 add-doller">
                 <input type="text" value="{{ $campaigns->pay_ppc }}"  name="pay_ppc"  class="form-control">
-                <div class="cpc_bid_error" style="color: red;"></div>
+                <div class="cpc_bid_error" style="color: #fd3b4d;"></div>
                 @if ($errors->has('pay_ppc')) 
                 <div class="error-custom"> {{$errors->first('pay_ppc') }} </div>
                 @endif
@@ -181,7 +203,7 @@ print_r($campaigns);
   </div>   
 </div>
 <script>
-  
+
   let editor = CKEDITOR.replace( 'description' );
   CKEDITOR.instances['description'].on("blur", function() {    
     editorContent = editor.getData();
@@ -202,39 +224,73 @@ print_r($campaigns);
 
   var _URL = window.URL || window.webkitURL;
   $("#banner_image").change(function (e) {
-      var file, img;
-      if ((file = this.files[0])) {
-          img = new Image();
-          var objectUrl = _URL.createObjectURL(file);
-          
-          img.onload = function () {
-            console.log('width',this.width);
-          console.log('height',this.height);
-              if(this.width != 600 || this.height != 300 ){
-                  $(".imgerror").html('Image size must be 600 X 300');
-                  $("#submit").attr('disabled','disabled');
-              }else{
-                  $(".imgerror").html('');
-                  $("#submit").removeAttr('disabled');
-              }              
-              _URL.revokeObjectURL(objectUrl);
-          };
-          img.src = objectUrl;
-      }
+    var file, img;
+    if ((file = this.files[0])) {
+      img = new Image();
+      var objectUrl = _URL.createObjectURL(file);
+
+      img.onload = function () {       
+        if(this.width != 600 || this.height != 300 ){
+          $(".imgerror").html('Image size must be 600 X 300');
+          $("#submit").attr('disabled','disabled');
+        }else{
+          $(".imgerror").html('');
+          $("#submit").removeAttr('disabled');
+        }              
+        _URL.revokeObjectURL(objectUrl);
+      };
+      img.src = objectUrl;
+    }
   });
 
-  let mincpc = "{{ get_option_value('average_min_CPC_bid') }}";  
-  mincpc = parseFloat(mincpc);  
-  $("input[name='pay_ppc']").focusout(function(){    
-    let ppcval = $(this).val();
+let mincpc = "{{ get_option_value('average_min_CPC_bid') }}"; 
+
+  $("input[name='pay_ppc']").focusout(function(){ 
+    let tireid = $('.cmpgntire input[type="radio"]:checked').val();    
+    if(typeof tireid != 'undefined' && tireid != 0){
+      check_tire_minmum_ppc(tireid);
+    }else{
+      minimum_cpc_error(mincpc);
+    }    
+  });
+
+  $('.cmpgntire input[type="radio"]').click(function(){    
+    let tireid = $('.cmpgntire input[type="radio"]:checked').val();
+    if(tireid != 0){
+      check_tire_minmum_ppc($('.cmpgntire input[type="radio"]:checked').val());
+     }else{
+      minimum_cpc_error(mincpc);
+    }    
+  });
+
+  function check_tire_minmum_ppc(tireid){    
+    $.ajax({
+      type:'POST',
+      url:'{{ get_option_value("web_url") }}/advertiser/tire-cpc',
+      headers: {
+        'X-CSRF-Token': $('meta[name="_token"]').attr('content')
+      },
+      data:{
+        tireid:tireid
+      },
+      success:function(res) {
+        minimum_cpc_error(res);
+      }
+    });
+  }
+
+  function minimum_cpc_error(mincpc){
+    mincpc = parseFloat(mincpc);    
+    let ppcval = $('input[name="pay_ppc"]').val();
     ppcval = parseFloat(ppcval);
     if(ppcval >= mincpc){
       $('.cpc_bid_error').html('');          
       $('#submit').removeAttr('disabled');
     }else{
       $('.cpc_bid_error').html('The CPC must be at least '+mincpc);
-       $("#submit").attr('disabled','disabled');
+      $('.biderror').hide();
+      $("#submit").attr('disabled','disabled');
     }
-  });
+  }
 </script>
 @endsection

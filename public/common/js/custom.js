@@ -44,13 +44,7 @@ $(document).ready( function () {
 				key:key,
 				value:value,
 			},
-			success:function(res) {
-
-				// location.reload();
-				// $('#frequency').css({ 'border' : 'none'});
-				// $('#frequency').attr('readonly','readonly');
-				// $('button.btn-warning').hide();
-			}
+			success:function(res) {}
 		});
 	});
 
