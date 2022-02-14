@@ -1,4 +1,4 @@
-<?php //testing   
+<?php 
 namespace App\Http\Controllers\Advertiser;
 
 use App\Http\Controllers\Controller;
@@ -67,10 +67,8 @@ class CampaignController extends Controller
 
   public function add_campaign(Request $request)
   {
-
     $data = $request->get('campaign_tire');
     $mincpc = ($data == 0)?get_option_value('average_min_CPC_bid'):$this->tire_cpc_controller($request->get('campaign_tire'));
-
     $request->validate([
       'campaign_name'   => 'required',
       'campaign_type'   => 'required',
@@ -87,24 +85,18 @@ class CampaignController extends Controller
     ]);
 
     $advertiser_id    = Auth::user()->id;
-
     $image = $request->file('banner_image');
     $imageName = time().'.'.$request->banner_image->extension(); 
-    $destinationPath  = base_path('public/common/images/campaignUploads');
-    
+    $destinationPath  = base_path('public/common/images/campaignUploads');    
     $fundsAmount = $request->get('campaign_budget'); 
     $chekFunds = FundsDetails::where('user_id',$advertiser_id)->where('remaning_funds','>=',$fundsAmount)->first();    
     $campaign_budget = (!empty($chekFunds))?$request->get('campaign_budget'):0;
 
     if($campaign_budget != 0){
-
       $image->move($destinationPath, $imageName);
-
       $traking_id = $this->generateRandomString();
       $utmf = time();
-
       $payDaily = ($campaign_budget >= $request->get('pay_daily'))?$request->get('pay_daily'):$campaign_budget;
-
       $campaign   = new  Campaign();
       $campaign->headline         = $request->get('headline');
       $campaign->tire_id          = $request->get('campaign_tire');
@@ -124,9 +116,7 @@ class CampaignController extends Controller
       $campaign->admin_approval   = '0';
       $campaign->campaign_status  = '0';
       $campaign->save();
-
       $this->campaign_tracking($campaign->id,$request->get('landing_url'),$traking_id,$utmf);
-
       $details = [
         'name' => Auth::user()->first_name.' '.Auth::user()->last_name,
         'campaign_name' => $request->get('campaign_name'),
@@ -151,7 +141,6 @@ class CampaignController extends Controller
   }
 
   private function campaign_tracking($campaignid,$landing_url,$traking_id,$utmf){
-
     $campaignTracking = new CampaignTracking();
     $campaignTracking->campaign_id = $campaignid;
     $campaignTracking->traking_id  = $traking_id;

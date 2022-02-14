@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="_token" content="{{ csrf_token() }}">
+  <meta name="_option" content="{{ get_option_value('web_url') }}">
   
   <link rel="icon" href="images/favicon.ico" type="image/ico" />
 

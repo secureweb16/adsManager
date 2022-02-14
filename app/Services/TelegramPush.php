@@ -9,6 +9,8 @@ use Carbon\Carbon;
 use App\Models\CampaignReport;
 use App\Models\CampaignPublishGroup;
 use App\Models\PublisherReport;
+use App\Models\Tier;
+use App\Models\TierReport;
 
 /*secureweb/socialmarketing*/
 use Secureweb\Socialmarketing\SocialMarketing;
@@ -113,7 +115,8 @@ class TelegramPush{
 		}
 	}
 
-	private function get_teleram_group($publishGroup){
+	private function get_teleram_group($publishGroup){		
+		
 		$date = date('H:i:s');
 		$telegramgroup = TelegramGroup::whereNotIn('id',$publishGroup)
 		->whereHas('TelegrmGroupDay', function($query) use ($date) {
@@ -165,12 +168,19 @@ class TelegramPush{
 	}
 
 	private function send_message_telegram_group_process($telegramGroup,$campaign){
+		
+		$publiherids = array();
+		if(!empty($campaign->tier_id) && $campaign->tier_id != 0)
+			$tier = Tier::where('id',$campaign->tier_id)->first();			
+			if(!empty($tier))
+				$publiherids = (!empty($tier->publisher))?explode(",",str_replace("[","",str_replace("]","",$tier->publisher))):array();
+
 		$i = 0;
 		foreach ($telegramGroup as $key => $value) {
 			if($i == $this->group_publish){ break; }
 			$frequency_ads	= strtotime(date("Y-m-d H:i:s", strtotime('-'.$value->frequency_of_ads.' '.$value->frequency_type)));
 			$publishtime = publish_time_from_publish_group($campaign->id,$value->id);
-			if($frequency_ads >= $publishtime){
+			if($frequency_ads >= $publishtime && (in_array($value->publisher_id, $publiherids) || count($publiherids) == 0)){
 				$unique = time().$i;
 				$this->send_message_on_telegram_group($campaign,$unique,$value);
 				$i++;
@@ -178,9 +188,10 @@ class TelegramPush{
 		}
 	}
 
-	private function send_message_on_telegram_group($campaign,$unique,$value){
+	private function send_message_on_telegram_group($campaign,$unique,$value){ 
 		$campaignURL = $campaign->tracking_url;
 		$advertiserId = $campaign->advertiser_id;
+		$tierId = $campaign->tire_id;
 		$campaignURL = $campaignURL.'/'.$value->publisher_id.'/'.$value->id.'/'.$unique;
 		$message = [
 			'image' => url('common/images/campaignUploads').'/'.$campaign->banner_image,
@@ -206,9 +217,9 @@ class TelegramPush{
 
 		$response = $social_marketing->sendRequest();
 
-      // echo "<pre>";
-      // print_r($response);
-      // exit("in telegram push file...");
+      echo "<pre>";
+      print_r($response);
+      exit("in telegram push file...");
 
 		if(isset($response["ok"]) && $response["ok"] == 1){
 
@@ -229,8 +240,38 @@ class TelegramPush{
 			$campaignPublishGroup->clicks 		= 0;
 			$campaignPublishGroup->unique_id = $unique;
 			$campaignPublishGroup->save();
+			if(!empty($tierId) && $tierId != 0)
+				$this->tier_report($campaign->id,$value->publisher_id,$value->id,$tierId);
 			$this->publisher_report($campaign->id,$value->publisher_id,$value->id);
 			$this->campaign_report($campaign->id,$value->publisher_id,$value->id);
+		}
+	}
+
+
+	private function tier_report($campaignid,$publisherid,$group_id,$tier_id){
+		$tierReport = TierReport::where('tier_id', '=', $tier_id)
+									->where('campaign_id', '=', $campaignid)
+									->where('publisher_id', '=', $publisherid)
+									->where('group_id', '=', $group_id)
+									->where('created_at','>=',Carbon::today())
+									->first();
+
+		if (empty($tierReport)){
+			$reportdata = new TierReport();
+			$reportdata->tier_id   			= $tier_id;
+			$reportdata->publisher_id   = $publisherid;
+			$reportdata->campaign_id    = $campaignid;
+			$reportdata->no_of_publish  = '1';
+			$reportdata->group_id       = $group_id;
+			$reportdata->save();
+		} else {
+			$report = $tierReport->no_of_publish;
+			TierReport::where('tier_id', '=', $tier_id)
+			->where('campaign_id', '=', $campaignid)
+			->where('publisher_id', '=', $publisherid)
+			->where('group_id', '=', $group_id)
+			->where('created_at','>=',Carbon::today())
+			->update(['no_of_publish' => $report + 1]);
 		}
 	}
 

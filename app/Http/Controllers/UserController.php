@@ -153,16 +153,16 @@ class UserController extends Controller
 		}
 	}
 
-	public function telegrm_track($trackingid,$utmf,$publisher_id,$telegram_group_id,$uniqueid){
+	public function telegram_track($trackingid,$utmf,$publisher_id,$telegram_group_id,$uniqueid){
 	
-/*			$path = base_path('public/logs/').'track_log.log';
-    	$file = fopen($path, 'a');
-    		fwrite($file, "\n\r========================Time ====================\n\r");
-    	fwrite($file, print_r(date('d-m-Y h:i:s'),true));
-fwrite($file, print_r($trackingid,true));
-fwrite($file, print_r($publisher_id,true));
-fwrite($file, print_r($utmf,true));
-    	  fclose($file);*/
+	/*$path = base_path('public/logs/').'track_log.log';
+    $file = fopen($path, 'a');
+    fwrite($file, "\n\r========================Time ====================\n\r");
+    fwrite($file, print_r(date('d-m-Y h:i:s'),true));
+		fwrite($file, print_r($trackingid,true));
+		fwrite($file, print_r($publisher_id,true));
+		fwrite($file, print_r($utmf,true));
+    fclose($file);*/
 
 		$trackingData 	= CampaignTracking::where('traking_id',$trackingid)->where('utmf',$utmf)->first();
 		$landing_url 		= $trackingData->landing_url;

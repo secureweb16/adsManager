@@ -38,8 +38,9 @@ Route::get('/', function () {
 
 Route::get('/check-info', function () {
 	echo "<pre>";
+
 	// new WeeklyReportGenerate();
-	// new TelegramPush();
+	new TelegramPush();
 	// new CampaignStatusUpdate();
 });
 Route::get('/trancate', function () {
@@ -58,7 +59,7 @@ Route::post('register', [UserController::class,'register'])->name('register');
 Route::post('login', [UserController::class,'login'])->name('login');
 Route::get('verify-email/{token}', [UserController::class,'verify_email'])->name('verify-email');
 
-Route::get('telegram/{trackingid}/{utmf}/{publisher_id}/{telegram_group_id}/{unique}',[UserController::class,'telegrm_track'])->name('telegrm_track');
+Route::get('telegram/{trackingid}/{utmf}/{publisher_id}/{telegram_group_id}/{unique}',[UserController::class,'telegram_track'])->name('telegram_track');
 
 Route::get('/dashboard', [HomeController::class,'index'])->middleware(['auth']);
 Route::get('/logout',  [HomeController::class,'logout'])->name('logout');

@@ -106,7 +106,7 @@ class Telegram{
 			$file_name = date('Ymd') ."-telegram-{$this->advertiser_id}-{$this->telegram_group_id}-" . time();
 			$this->save_logs('telegram', $file_name , $this->response);
 		}
-		
+		// print_r($this->response);exit;
 		if($this->response->ok()){
 			if($this->action === 'send'){ 
 				return $this->parse_success_response(); 

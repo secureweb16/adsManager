@@ -1,3 +1,4 @@
+const weburl = $('meta[name="_option"]').attr('content');
 $(function() {
     var filedval = $('#reportrangeadm').val();
     var days = 0;
@@ -54,7 +55,7 @@ function change_campaign_status(campin_id,status){
 
 	$.ajax({
 		type:'POST',
-		url:'/admin/update-campaign',
+		url:weburl+'/admin/update-campaign',
 		headers: {
 			'X-CSRF-Token': $('meta[name="_token"]').attr('content')
 		},
@@ -73,7 +74,7 @@ function campaign_view(campin_id){
 
 	$.ajax({
 		type:'POST',
-		url:'/admin/campaign-view',
+		url:weburl+'/admin/campaign-view',
 		headers: {
 			'X-CSRF-Token': $('meta[name="_token"]').attr('content')
 		},
@@ -109,7 +110,7 @@ $('.status input[type="checkbox"]').click(function(){
 
 	$.ajax({
 		type:'POST',
-		url:'/admin/publishers/groupStatus',
+		url:weburl+'/admin/publishers/groupStatus',
 		headers: {
 			'X-CSRF-Token': $('meta[name="_token"]').attr('content')
 		},

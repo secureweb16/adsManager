@@ -17,7 +17,7 @@ class CreateTierPublishersTable extends Migration
           $table->id();
           $table->unsignedBigInteger('tier_id')->nullable();
           $table->foreign('tier_id')->references('id')->on('tiers')->onDelete('CASCADE');
-          $table->bigInteger('publisher_id')->nullable(); 
+          $table->bigInteger('publisher_id')->nullable();
           $table->float('minimun_cpc')->nullable();
           $table->float('payout')->nullable();
           $table->timestamps();
