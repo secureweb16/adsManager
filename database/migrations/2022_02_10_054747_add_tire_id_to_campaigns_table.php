@@ -14,7 +14,7 @@ class AddTireIdToCampaignsTable extends Migration
     public function up()
     {
         Schema::table('campaigns', function (Blueprint $table) {
-            $table->integer('tire_id')->after('advertiser_id')->nullable();
+            $table->integer('tier_id')->after('advertiser_id')->nullable();
         });
     }
 
