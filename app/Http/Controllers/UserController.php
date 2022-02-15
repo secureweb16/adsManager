@@ -166,25 +166,6 @@ class UserController extends Controller
 		fwrite($file, print_r($utmf,true));
     fclose($file);*/
 
-    $n = 10;
-    // for($i = 1; $i <= $n; $i++ ){
-    // 	for ($k=1; $k <= ($n-$i)*2 ; $k++) { echo '&nbsp;'; }
-    // 	for ($j=1; $j <= ($i*2)-1 ; $j++) { 
-    // 		echo "*";
-    // 	}    	
-    // 	echo "<br>";
-    // }
-
-    // for($i = $n; $i >= 1; $i-- ){
-    // 	for ($k=1; $k <= ($n-$i)*2 ; $k++) { echo '&nbsp;'; }
-    // 	for ($j=1; $j <= ($i*2)-1 ; $j++) { 
-    // 		echo "*";
-    // 	}    	
-    // 	echo "<br>";
-    // }
-
-    exit;
-
 
 		$trackingData 	= CampaignTracking::where('traking_id',$trackingid)->where('utmf',$utmf)->first();
 		$landing_url 		= $trackingData->landing_url;
