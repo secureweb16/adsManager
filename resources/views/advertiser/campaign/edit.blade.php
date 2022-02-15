@@ -76,7 +76,7 @@ print_r($campaigns);
                       <div class="cmpgntire">
                         <div class="radio-fields">
                           <label for="telegram"> {{ $tier->tier_name }} 
-                            <input type="radio" name="campaign_tier" value="{{$tier->id}}" data-id="{{$tier->id}}" @if($tier->id == $campaigns->tire_id ) checked @endif>
+                            <input type="radio" name="campaign_tier" value="{{$tier->id}}" data-id="{{$tier->id}}" @if($tier->id == $campaigns->tier_id ) checked @endif>
                             <span class="checkmark"></span>
                           </label>
                         </div>
