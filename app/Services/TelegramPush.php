@@ -200,7 +200,7 @@ class TelegramPush{
 		$tierId = $campaign->tier_id;
 		$campaignURL = $campaignURL.'/'.$value->publisher_id.'/'.$value->id.'/'.$unique;
 		$message = [
-			'image' => 'https://securewebtechnologies.com/wp-content/themes/sparkling-child/images/loader-logo.png',//url('common/images/campaignUploads').'/'.$campaign->banner_image,
+			'image' => url('common/images/campaignUploads').'/'.$campaign->banner_image,
 			'title' => $campaign->headline,
 			'btntxt' => $campaign->button_text,
 			'link' => $campaignURL,

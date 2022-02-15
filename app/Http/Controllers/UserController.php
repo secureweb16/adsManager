@@ -166,7 +166,6 @@ class UserController extends Controller
 		fwrite($file, print_r($utmf,true));
     fclose($file);*/
 
-
 		$trackingData 	= CampaignTracking::where('traking_id',$trackingid)->where('utmf',$utmf)->first();
 		$landing_url 		= $trackingData->landing_url;
 		$campaign_id 		= $trackingData->campaign_id;
