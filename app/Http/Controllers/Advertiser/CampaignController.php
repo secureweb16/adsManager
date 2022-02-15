@@ -99,7 +99,7 @@ class CampaignController extends Controller
       $payDaily = ($campaign_budget >= $request->get('pay_daily'))?$request->get('pay_daily'):$campaign_budget;
       $campaign   = new  Campaign();
       $campaign->headline         = $request->get('headline');
-      $campaign->tire_id          = $request->get('campaign_tire');
+      $campaign->tier_id          = $request->get('campaign_tier');
       $campaign->campaign_name    = $request->get('campaign_name');
       $campaign->campaign_type    = implode(',',$request->get('campaign_type'));
       $campaign->advertiser_id    = $advertiser_id;
@@ -218,7 +218,7 @@ class CampaignController extends Controller
     $payDaily = ($campaign->campaign_budget >= $request->get('pay_daily'))?$request->get('pay_daily'):$campaign->campaign_budget;
 
     $campaign->headline         = $request->get('headline');       
-    $campaign->tire_id          = $request->get('campaign_tire');
+    $campaign->tier_id          = $request->get('campaign_tier');
     $campaign->campaign_name    = $request->get('campaign_name');
     $campaign->campaign_type    = implode(',',$request->get('campaign_type'));
     $campaign->pay_ppc          = $request->get('pay_ppc');

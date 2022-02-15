@@ -62,7 +62,7 @@
                         <div class="cmpgntire">
                           <div class="radio-fields">
                             <label for="telegram"> None
-                              <input type="radio" name="campaign_tire" value="0" checked >
+                              <input type="radio" name="campaign_tier" value="0" checked >
                               <span class="checkmark"></span>
                             </label>
                           </div>
@@ -73,7 +73,7 @@
                         <div class="cmpgntire">
                           <div class="radio-fields">
                             <label for="telegram"> {{ $tier->tier_name }} 
-                              <input type="radio" name="campaign_tire" value="{{$tier->id}}" data-id="{{$tier->id}}" @if($tier->id == old('campaign_tire')) checked @endif>
+                              <input type="radio" name="campaign_tier" value="{{$tier->id}}" data-id="{{$tier->id}}" @if($tier->id == old('campaign_tier')) checked @endif>
                               <span class="checkmark"></span>
                             </label>
                           </div>
