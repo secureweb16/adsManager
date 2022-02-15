@@ -21,6 +21,8 @@ use App\Models\PublisherReportLog;
 use App\Models\CampaignReport;
 use App\Models\CampaignPublishGroup;
 use App\Models\CampaignClicksIpTracking;
+use App\Models\Tier;
+use App\Models\TierReport;
 use App\Notifications\UserRegistration as UserRegistration;
 use Hash;
 use Session;
@@ -164,12 +166,41 @@ class UserController extends Controller
 		fwrite($file, print_r($utmf,true));
     fclose($file);*/
 
+    $n = 10;
+    // for($i = 1; $i <= $n; $i++ ){
+    // 	for ($k=1; $k <= ($n-$i)*2 ; $k++) { echo '&nbsp;'; }
+    // 	for ($j=1; $j <= ($i*2)-1 ; $j++) { 
+    // 		echo "*";
+    // 	}    	
+    // 	echo "<br>";
+    // }
+
+    // for($i = $n; $i >= 1; $i-- ){
+    // 	for ($k=1; $k <= ($n-$i)*2 ; $k++) { echo '&nbsp;'; }
+    // 	for ($j=1; $j <= ($i*2)-1 ; $j++) { 
+    // 		echo "*";
+    // 	}    	
+    // 	echo "<br>";
+    // }
+
+    exit;
+
+
 		$trackingData 	= CampaignTracking::where('traking_id',$trackingid)->where('utmf',$utmf)->first();
 		$landing_url 		= $trackingData->landing_url;
 		$campaign_id 		= $trackingData->campaign_id;
-		$average_click_cost = get_option_value('average_cost_value');
+		
 		$campaigndata 	= Campaign::findOrFail($campaign_id);
 		$totalcost 			= $campaigndata->campaign_budget;
+		$tier_id 				= $campaigndata->tier_id;
+		if(!empty($tier_id) && $tier_id != 0){
+			$tierdata = $this->return_tier_data($tier_id);
+			$persentage = $tierdata['persentage'];
+			$average_click_cost = $tierdata['averagecost'];
+		}else{
+			$average_click_cost = get_option_value('average_cost_value');
+			$persentage = 0;
+		}
 		$remaing_total 	= ($campaigndata->remaing_total) - $average_click_cost;
 		$remaing_daily 	= ($campaigndata->remaing_daily) - $average_click_cost;
 		$detuction_cost = ($campaigndata->remaing_daily >= $average_click_cost)?$average_click_cost:$campaigndata->remaing_daily;
@@ -182,9 +213,13 @@ class UserController extends Controller
 				$this->updateCampaignCost($campaign_id,$remaing_daily);
 				$this->insertTrackingRecord($publisher_id,$telegram_group_id,$campaign_id,$totalcost,$average_click_cost,$remaing_total,$utmf,$detuction_cost);
 				$this->deleteCampaignRecord($uniqueid);
-				$this->update_publisher_report($publisher_id,$campaign_id,$detuction_cost,$telegram_group_id);
+				
+				if(!empty($tier_id) && $tier_id != 0)
+					$this->update_tier_report($publisher_id,$campaign_id,$telegram_group_id,$tier_id,$persentage,$detuction_cost);
+
+				$this->update_publisher_report($publisher_id,$campaign_id,$detuction_cost,$telegram_group_id,$persentage);
 				$this->update_capmaign_report($publisher_id,$campaign_id,$telegram_group_id);
-				$this->update_publisher_payments($publisher_id,$detuction_cost);
+				$this->update_publisher_payments($publisher_id,$detuction_cost,$persentage);
 			}
 			return Redirect::to($landing_url);
 		}
@@ -334,7 +369,47 @@ class UserController extends Controller
 	}
 
 
-	private function update_publisher_report($publisherid,$campaign_id,$averagecost,$telegram_group_id){
+	private function update_tier_report($publisherid,$campaign_id,$telegram_group_id,$tier_id,$persentage,$averagecost){
+
+		$tierdata = TierReport::where('tier_id','=',$tier_id)
+		->where('publisher_id','=',$publisherid)
+		->where('campaign_id','=',$campaign_id)
+		->where('group_id','=',$telegram_group_id)
+		->where('created_at','>=',Carbon::today())
+		->first();
+
+		$userPayment = ( $persentage != '')?$persentage:get_option_value('publisher_payout');
+		$adminPayment = 100 - $userPayment;
+
+		$user_amount = number_format(($averagecost*$userPayment)/100,2);
+		$admin_amount = number_format(($averagecost*$adminPayment)/100,2);
+
+		if(empty($tierdata)){
+			$tierReport = new TierReport();
+			$tierReport->campaign_id = $campaign_id;
+			$tierReport->publisher_id = $publisherid;
+			$tierReport->group_id = $telegram_group_id;
+			$tierReport->no_of_publish = 1;
+			$tierReport->no_of_clicks = 1;
+			$tierReport->user_amount = $user_amount;
+			$tierReport->admin_amount = $admin_amount;
+			$tierReport->total_amount = $averagecost;
+			$tierReport->save();
+		}else{
+			$cpcId = $tierdata->id;
+			$clicks = $tierdata->no_of_clicks+1;
+			$payableAmount = $tierdata->payable_amount+$user_amount;
+			$totalAmount = $tierdata->total_amount+$averagecost;
+			TierReport::where('id', $cpcId)->update([ 				
+				'no_of_clicks'		=> $clicks,
+				'total_amount'		=> $totalAmount,
+				'user_amount'		=> $tierdata->user_amount+$user_amount,
+				'admin_amount'		=> $tierdata->admin_amount+$admin_amount,
+			]);
+		}		
+	}
+
+	private function update_publisher_report($publisherid,$campaign_id,$averagecost,$telegram_group_id,$persentage){
 
 		$paymentdata = PublisherReport::where('publisher_id','=',$publisherid)
 		->where('campaign_id','=',$campaign_id)
@@ -342,7 +417,9 @@ class UserController extends Controller
 		->where('created_at','>=',Carbon::today())
 		->first();
 
-		$persentage = PayoutPersentage($publisherid);
+		if(empty($persentage) || $persentage == 0)
+			$persentage = PayoutPersentage($publisherid);
+
 		$userPayment = ( $persentage != '')?$persentage:get_option_value('publisher_payout');
 		$adminPayment = 100 - $userPayment;
 
@@ -352,10 +429,10 @@ class UserController extends Controller
 		if(empty($paymentdata)){
 			$publisherReport = new PublisherReport();
 			$publisherReport->publisher_id = $publisherid;			
-			$publisherReport->campaign_id = $campaign_id;			
-			$publisherReport->campaign_id = $campaign_id;			
-			$publisherReport->no_of_publish = 1;			
-			$publisherReport->no_of_clicks = 1;			
+			$publisherReport->campaign_id = $campaign_id;
+			$publisherReport->group_id = $telegram_group_id;
+			$publisherReport->no_of_publish = 1;
+			$publisherReport->no_of_clicks = 1;
 			$publisherReport->user_amount = $user_amount;
 			$publisherReport->admin_amount = $admin_amount;
 			$publisherReport->payable_amount = $user_amount;
@@ -367,7 +444,7 @@ class UserController extends Controller
 			$clicks = $paymentdata->no_of_clicks+1;
 			$payableAmount = $paymentdata->payable_amount+$user_amount;
 			$totalAmount = $paymentdata->total_amount+$averagecost;
-			PublisherReport::where('id', $cpcId)->update([ 				
+			PublisherReport::where('id', $cpcId)->update([
 				'no_of_clicks'		=> $clicks,
 				'payable_amount'	=> $payableAmount,
 				'total_amount'		=> $totalAmount,
@@ -388,10 +465,12 @@ class UserController extends Controller
 		$publisherReportLog->save();
 	}
 
-	private function update_publisher_payments($publisherid,$averagecost){
+	private function update_publisher_payments($publisherid,$averagecost,$persentage){
+		
+		if(empty($persentage) || $persentage == 0)
+			$persentage = PayoutPersentage($publisherid);
 
-		$paymentpayments = PublisherPayment::where('publisher_id','=',$publisherid)->first();
-		$persentage = PayoutPersentage($publisherid);
+		$paymentpayments = PublisherPayment::where('publisher_id','=',$publisherid)->first();		
 		$userPayment = ( $persentage != '')?$persentage:get_option_value('publisher_payout');
 		$adminPayment = 100 - $userPayment;
 
@@ -431,6 +510,14 @@ class UserController extends Controller
 		}else{
 			return 0;
 		}
+	}
+
+	private function return_tier_data($tier_id){
+		$tier = Tier::where('id',$tier_id)->first();		
+		return array(
+			'persentage' => $tier->payout,
+			'averagecost' => $tier->minimun_cpc,
+		);
 	}
 
 

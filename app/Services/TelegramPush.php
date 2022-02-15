@@ -51,8 +51,8 @@ class TelegramPush{
 
 		$telegram_group_hrs = get_option_value('telegram_group_hrs');
 		$averageTime	= strtotime(date("Y-m-d H:i:s", strtotime('-20 minutes')));
-		/* 19-01-2022 latest backup with average time condation */
-		
+
+		/* 19-01-2022 latest backup with average time condation */		
 		foreach ($allcampaign as $key => $campaign) {
 
 			/*Check Timenig telegram_group_hrs hours */
@@ -154,30 +154,14 @@ class TelegramPush{
 	}
 
 	private function send_message_telegram_group_process_no_of_groups_publish($telegramGroup,$campaign,$finalpublish){
-		$i = 0;
-		foreach ($telegramGroup as $key => $value) {
-			if($i == $finalpublish){ break; }
-			$frequency_ads	= strtotime(date("Y-m-d H:i:s", strtotime('-'.$value->frequency_of_ads.' '.$value->frequency_type)));
-			$publishtime = publish_time_from_publish_group($campaign->id,$value->id);
-			if($frequency_ads >= $publishtime){
-				$unique = time().$i;
-				$this->send_message_on_telegram_group($campaign,$unique,$value);
-				$i++;
-			}
-		}
-	}
-
-	private function send_message_telegram_group_process($telegramGroup,$campaign){
-		
 		$publiherids = array();
 		if(!empty($campaign->tier_id) && $campaign->tier_id != 0)
 			$tier = Tier::where('id',$campaign->tier_id)->first();			
 			if(!empty($tier))
 				$publiherids = (!empty($tier->publisher))?explode(",",str_replace("[","",str_replace("]","",$tier->publisher))):array();
-
 		$i = 0;
 		foreach ($telegramGroup as $key => $value) {
-			if($i == $this->group_publish){ break; }
+			if($i == $finalpublish){ break; }
 			$frequency_ads	= strtotime(date("Y-m-d H:i:s", strtotime('-'.$value->frequency_of_ads.' '.$value->frequency_type)));
 			$publishtime = publish_time_from_publish_group($campaign->id,$value->id);
 			if($frequency_ads >= $publishtime && (in_array($value->publisher_id, $publiherids) || count($publiherids) == 0)){
@@ -188,18 +172,41 @@ class TelegramPush{
 		}
 	}
 
-	private function send_message_on_telegram_group($campaign,$unique,$value){ 
+	private function send_message_telegram_group_process($telegramGroup,$campaign){
+
+		$publiherids = array();
+		if(!empty($campaign->tier_id) && $campaign->tier_id != 0)
+			$tier = Tier::where('id',$campaign->tier_id)->first();			
+			if(!empty($tier))
+				$publiherids = (!empty($tier->publisher))?explode(",",str_replace("[","",str_replace("]","",$tier->publisher))):array();
+
+		$i = 0;
+		foreach ($telegramGroup as $key => $value) {
+
+			if($i == $this->group_publish){ break; }
+			$frequency_ads	= strtotime(date("Y-m-d H:i:s", strtotime('-'.$value->frequency_of_ads.' '.$value->frequency_type)));
+			$publishtime = publish_time_from_publish_group($campaign->id,$value->id);
+			if($frequency_ads >= $publishtime && (in_array($value->publisher_id, $publiherids) || count($publiherids) == 0)){				
+				$unique = time().$i;
+				$this->send_message_on_telegram_group($campaign,$unique,$value);
+				$i++;
+			}
+		}
+	}
+
+	private function send_message_on_telegram_group($campaign,$unique,$value){		
 		$campaignURL = $campaign->tracking_url;
 		$advertiserId = $campaign->advertiser_id;
-		$tierId = $campaign->tire_id;
+		$tierId = $campaign->tier_id;
 		$campaignURL = $campaignURL.'/'.$value->publisher_id.'/'.$value->id.'/'.$unique;
 		$message = [
-			'image' => url('common/images/campaignUploads').'/'.$campaign->banner_image,
+			'image' => 'https://securewebtechnologies.com/wp-content/themes/sparkling-child/images/loader-logo.png',//url('common/images/campaignUploads').'/'.$campaign->banner_image,
 			'title' => $campaign->headline,
 			'btntxt' => $campaign->button_text,
 			'link' => $campaignURL,
 			'description' => strip_tags($campaign->description)
 		];
+		
 		$social_marketing = new SocialMarketing('telegram',
 			$message,
 			'send',
@@ -217,9 +224,9 @@ class TelegramPush{
 
 		$response = $social_marketing->sendRequest();
 
-      echo "<pre>";
-      print_r($response);
-      exit("in telegram push file...");
+      // echo "<pre>";
+      // print_r($response);
+      // exit("in telegram push file...");
 
 		if(isset($response["ok"]) && $response["ok"] == 1){
 
