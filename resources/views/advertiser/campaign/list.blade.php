@@ -84,7 +84,7 @@
               <td>{{ $campaign->campaign_name }}</td>
               <td>{{ $campaign->campaign_budget }}</td>
               <td>{{ $campaign->remaing_total }}</td>
-              <td> {{ ($campaign->get_campaign_report_sum_total_amount && $campaign->get_campaign_report_sum_no_of_clicks)? $campaign->get_campaign_report_sum_total_amount/$campaign->get_campaign_report_sum_no_of_clicks : 0 }} </td>
+              <td> {{ ($campaign->get_campaign_report_sum_total_amount && $campaign->get_campaign_report_sum_no_of_clicks)? number_format($campaign->get_campaign_report_sum_total_amount/$campaign->get_campaign_report_sum_no_of_clicks,2) : 0 }} </td>
               <td> {{ ($campaign->get_campaign_report_sum_no_of_clicks)? $campaign->get_campaign_report_sum_no_of_clicks : 0 }} </td>
               <td> {{ $campaign->remaing_daily }} </td>
               <td style="">{{ $campaign->landing_url }}</td>
