@@ -10,22 +10,22 @@
         <div class="input-group">
           <a href="{{route('admin.tiers.create')}}">
             <button type="button" class="btn btn-primary btn-sm">Add New</button>
-          </a> 
+          </a>
           <a href="{{route('admin.tiers.trash')}}">
             <button type="button" class="btn btn-primary btn-sm">Trash</button>
-          </a>         
+          </a>
         </div>
       </div>
     </div>
-  </div>  
+  </div>
   
   <div class="clearfix"></div>
   <div class="row clearfix" style="display: block;">
-    <div class="col-md-12 col-sm-6">      
+    <div class="col-md-12 col-sm-6">
       @if(Session::get('success'))
       <div class="alert alert-success alert-dismissible " role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <strong>Error!</strong> {{ Session::get('success') }}
+        <strong>Success!</strong> {{ Session::get('success') }}
       </div>
       @endif
 
@@ -48,11 +48,11 @@
               <tr>
                 <th scope="row"> {{ $i }} </th>
                 <td> {{ $tier->tier_name }} </td>
-                <td> @php 
+                <td> @php
                   $publisher = str_replace("[","",$tier->publisher);
                   $publisher = str_replace("]","",$publisher);
-                  $publisher = explode(",",$publisher);                  
-                @endphp  
+                  $publisher = explode(",",$publisher);
+                @endphp
                 @foreach($publisher as $pub)
                   {{ UserEmail($pub) }} <br/>
                 @endforeach
