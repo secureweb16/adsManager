@@ -29,8 +29,8 @@ class TierController extends Controller
      */
     public function create()
     {
-        $tierPublisher = TierPublisher::pluck('publisher_id')->toArray();
-        $allpublisher = User::whereNotIn('id',$tierPublisher)->where('user_role', '=','2')->where('user_status', '=', '1')->get();
+      $tierPublisher = TierPublisher::pluck('publisher_id')->toArray();
+      $allpublisher = User::whereNotIn('id',$tierPublisher)->where('user_role', '=','2')->where('user_status', '=', '1')->get();
         return view('admin.tiers.create',compact('allpublisher'));
     }
 
@@ -42,7 +42,6 @@ class TierController extends Controller
      */
     public function store(Request $request)
     { 
-
       $validated = $request->validate([
         'tier_name'   => 'required',
         'publisher'   => 'required',
@@ -132,7 +131,7 @@ class TierController extends Controller
       return redirect()->back()->with(['success'=>'Tier updated successfully']);
 
     }
-
+    
     /**
      * Remove the specified resource from storage.
      *
@@ -157,13 +156,43 @@ class TierController extends Controller
 
     public function tiers_restore($id){
       $tier = Tier::onlyTrashed()->find(decrypt($id));
-      $tier->restore();
-      return redirect()->back()->with('success', 'Tier restore successfully');
+      /*$tier->restore();
+      return redirect()->back()->with('success', 'Tier restore successfully');*/
+
+      $tierPublisher = TierPublisher::pluck('publisher_id')->toArray();
+      $allpublisher = User::whereNotIn('id',$tierPublisher)->where('user_role', '=','2')->where('user_status', '=', '1')->get();
+        return view('admin.tiers.restore',compact('tier','allpublisher'));
+    }
+
+    public function tiers_restore_update(Request $request, $id)
+    {
+      $validated = $request->validate([
+        'publisher'   => 'required',
+      ]);
+      $id = decrypt($id);
+      $tier   = Tier::onlyTrashed()->find($id);
+      $tier->publisher         = '['.implode(',',$request->get('publisher')).']';
+      $tier->deleted_at = null;
+      $tier->save();      
+      foreach ($request->get('publisher') as $publisherid) {
+        $tierpublisher  = new  TierPublisher();
+        $tierpublisher->tier_id       = $tier->id;
+        $tierpublisher->publisher_id  = $publisherid;
+        $tierpublisher->minimun_cpc   = $tier->minimun_cpc;
+        $tierpublisher->payout        = $tier->payout;
+        $tierpublisher->save();
+      }
+      return redirect()->route('admin.tiers.index')->with(['success'=>'Tier restore successfully']);
     }
 
     public function tiers_trash_delete($id){
-      $id = decrypt($id);      
+      $id = decrypt($id);
       Tier::onlyTrashed()->find($id)->forceDelete();
       return redirect()->back()->with('success', 'Tier deleted successfully');
+    }
+
+    public function tiers_report(){
+      $alltier = Tier::get();
+      return view('admin.tiers.report',compact('alltier'));
     }
 }
