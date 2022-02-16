@@ -156,8 +156,9 @@ class UserController extends Controller
 	}
 
 	public function telegram_track($trackingid,$utmf,$publisher_id,$telegram_group_id,$uniqueid){
-	
+
 		$trackingData 	= CampaignTracking::where('traking_id',$trackingid)->where('utmf',$utmf)->first();
+		print_r($trackingData); exit;
 		$landing_url 		= $trackingData->landing_url;
 		$campaign_id 		= $trackingData->campaign_id;
 		
@@ -263,7 +264,7 @@ class UserController extends Controller
 		->where('telegram_group_id', $telegram_group_id)
 		->where('publisher_id', $publisherid)
 		->first();
-
+print_r($camReport); exit;
 		CampaignReport::where('campaign_id', $campaign_id)
 		->where('telegram_group_id', $telegram_group_id)
 		->where('publisher_id', $publisherid)
