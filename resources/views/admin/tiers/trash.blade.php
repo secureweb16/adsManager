@@ -47,7 +47,7 @@
                 <td> {{ $tier->minimun_cpc }} </td>
                 <td> {{ $tier->payout }} </td>
                 <td>
-                  <button type="button" class="btn btn-warning btn-sm">
+                  <button type="button" class="btn btn-warning btn-sm">                    
                     <a href="{{ route('admin.tiers.restore',encrypt($tier->id)) }}" class="text-white">Restore</a>
                   </button>
                   <form action="{{ route('admin.tiers.trash.delete',encrypt($tier->id)) }}" method="post">

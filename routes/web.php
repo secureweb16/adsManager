@@ -3,7 +3,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\CronjobController;
 
 use App\Http\Controllers\Advertiser  as Advertiser;
 use App\Http\Controllers\Publisher as Publisher;
@@ -78,10 +77,6 @@ Route::any('/autologin', [UserController::class,'loginfromMarketplace'])->name('
 
 Route::get('/csv/{uuid}/download', [HomeController::class,'download'])->name('csv.download');
 
-// Route::get('push-telegram', [CronjobController::class,'push_telegram']);
-// Route::get('delete-telegram', [CronjobController::class,'delete_telegram']);
-
-
 /*Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');*/
@@ -133,8 +128,10 @@ Route::prefix('admin')->name('admin.')->middleware('isAdmin')->group(function ()
 	Route::get('/campaigns/approvedlist',[Admin\CampaignController::class,'approved_list'])->name('campaign.approvelist');
 	Route::get('/campaigns/pendinglist',[Admin\CampaignController::class,'pending_list'])->name('campaign.pendinglist');
 
+	Route::get('/tiers/report',[Admin\TierController::class,'tiers_report'])->name('tiers.report');
 	Route::get('/tiers/trash',[Admin\TierController::class,'tiers_trash'])->name('tiers.trash');
 	Route::get('/tiers/restore/{id}',[Admin\TierController::class,'tiers_restore'])->name('tiers.restore');
+	Route::match(['put', 'patch'],'/tiers/restore/{id}',[Admin\TierController::class,'tiers_restore_update'])->name('tiers.restore.update');
 	Route::delete('/tiers/trash/delete/{id}',[Admin\TierController::class,'tiers_trash_delete'])->name('tiers.trash.delete');
 
 	Route::resources([
