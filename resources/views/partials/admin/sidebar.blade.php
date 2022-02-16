@@ -14,8 +14,9 @@
             
             <li><a><i class="fa fa-columns"></i> Tiers <span class="fa fa-chevron-down"></span></a>
               <ul class="nav child_menu">
-                <li><a href="{{route('admin.tiers.index')}}">All Tiers </a></li>
+                <li><a href="{{route('admin.tiers.index')}}"> All Tiers </a></li>
                 <li><a href="{{route('admin.tiers.create')}}"> Add New </a></li>
+                <!-- <li><a href="{{route('admin.tiers.report')}}"> Tier Report </a></li> -->
               </ul>
             </li>
 
