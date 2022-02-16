@@ -1,54 +1,50 @@
 const weburl = $('meta[name="_option"]').attr('content');
 $(function() {
-    var filedval = $('#reportrangeadm').val();
-    var days = 0;
+	var filedval = $('#reportrangeadm').val();
+	var days = 0;
 	var start = moment().subtract(days, 'days');
 	var end = moment();
-    if(filedval != 'Select the date' && typeof filedval != 'undefined'){
-    	const filedate = filedval.split("-");
-	    let startD = filedate[0].trim();
-	    let endD = filedate[1].trim();
-	    var days = daysdifference(startD, endD);
-    	var startdate = new Date(endD);
-	    var start = moment(startdate).subtract(days, 'days');
-    	var end = moment(endD);
-    }
+	if(filedval != 'Select the date' && typeof filedval != 'undefined'){
+		const filedate = filedval.split("-");
+		let startD = filedate[0].trim();
+		let endD = filedate[1].trim();
+		var days = daysdifference(startD, endD);
+		var startdate = new Date(endD);
+		var start = moment(startdate).subtract(days, 'days');
+		var end = moment(endD);
+	}
 
-    function cb(start, end) { $('#reportrangeadm').val(filedval); }
+	function cb(start, end) { $('#reportrangeadm').val(filedval); }
 
-    $('#reportrangeadm').daterangepicker({
-        startDate: start,
-        endDate: end,
-        ranges: {
-           'Today': [moment(), moment()],
-           'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-           'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-           'This Month': [moment().startOf('month'), moment().endOf('month')],
-           'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-        },
-      
-    }, cb);
+	$('#reportrangeadm').daterangepicker({
+		startDate: start,
+		endDate: end,
+		ranges: {
+			'Today': [moment(), moment()],
+			'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+			'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+			'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+			'This Month': [moment().startOf('month'), moment().endOf('month')],
+			'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+		},
 
-    cb(start, end);
+	}, cb);
+
+	cb(start, end);
 
 });
 
 
- setTimeout(function() { 
- 	var filedval = $('#reportrangeadm').val();
- console.log('filedval',filedval);
-    $('#reportrangeadm').val(filedval);
-    }, 2000);
+setTimeout(function() { 
+	var filedval = $('#reportrangeadm').val();
+	$('#reportrangeadm').val(filedval);
+}, 2000);
 
 
 $(document).ready(function(){
-
-
 	$('.view-poup span').click(function(){
 		$('.view-poup').removeClass('showpoup');
 	});
-
 });
 
 function change_campaign_status(campin_id,status){
@@ -63,12 +59,10 @@ function change_campaign_status(campin_id,status){
 			campin_id:campin_id,
 			status:status,
 		},
-		success:function(data) {
-			 // console.log('data',data);
-			 // return false;
-			location.reload();
-		}
-	});
+		success:function(data) {			 
+			 location.reload();
+			}
+		});
 }
 function campaign_view(campin_id){
 
@@ -97,9 +91,7 @@ function campaign_view(campin_id){
 	});
 }
 
-
 /* change date */
-
 
 $('.status input[type="checkbox"]').click(function(){
 	var id = $(this).attr('attrtid');
