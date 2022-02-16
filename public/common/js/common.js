@@ -33,7 +33,7 @@ $(function() {
 	cb(start, end);
 });
 
-function daysdifference(firstDate, secondDate){  
+function daysdifference(firstDate, secondDate){
 	var startDay = new Date(firstDate);
 	var endDay = new Date(secondDate);
 	var millisBetween = startDay.getTime() - endDay.getTime();
