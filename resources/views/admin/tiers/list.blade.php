@@ -39,6 +39,8 @@
                 <th>Publisher</th>
                 <th>Minimum CPC</th>
                 <th>Payout</th>
+                <th>Total Publish</th>
+                <th>Total Clicks</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -59,6 +61,8 @@
                  </td>
                 <td> {{ $tier->minimun_cpc }} </td>
                 <td> {{ $tier->payout }} </td>
+                <td> {{ get_tier_total_publish($tier->id) }}  </td>
+                <td> {{ get_tier_total_clicks($tier->id) }}  </td>
                 <td>
                   <button type="button" class="btn btn-warning btn-sm">
                     <a href="{{ route('admin.tiers.edit',encrypt($tier->id)) }}" class="text-white">Edit</a>

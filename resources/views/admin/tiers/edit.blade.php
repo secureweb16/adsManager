@@ -26,13 +26,12 @@
           <br />
           <form method="post" enctype=multipart/form-data action="{{route('admin.tiers.update',encrypt($tier->id))}}">
             @csrf
-            {{ method_field('PUT') }}
-            @php $publisherOld = (!empty(old('publisher')))?old('publisher'):array(); @endphp
+            {{ method_field('PUT') }}            
             <div class="item form-group">
               <label class="col-form-label col-md-3 col-sm-3 label-align" for="tier_name"> Tier Name <span class="required">*</span> </label>
               <div class="col-md-9 col-sm-9">
                 <div class="inner_filedsec">
-                  <input type="text" value="{{ $tier->tier_name }}"  name="tier_name"  class="form-control">
+                  <input type="text" value="{{ $tier->tier_name }}" name="tier_name" class="form-control">
                 </div>
                 @if ($errors->has('tier_name')) 
                 <div class="error-custom"> {{$errors->first('tier_name') }} </div>
@@ -44,7 +43,7 @@
               <label class="col-form-label col-md-3 col-sm-3 label-align"> Tier Description </label>
               <div class="col-md-9 col-sm-9">
                 <div class="inner_filedsec">
-                  <textarea name="tier_description"  class="form-control">{{ $tier->tier_description }}</textarea>
+                  <textarea name="tier_description" class="form-control">{{ $tier->tier_description }}</textarea>
                 </div>
                 @if ($errors->has('tier_description')) 
                 <div class="error-custom"> {{$errors->first('tier_description') }} </div>
@@ -73,7 +72,7 @@
               <label class="col-form-label col-md-3 col-sm-3 label-align"> Minimum CPC </label>
               <div class="col-md-9 col-sm-9 add-doller">
                 <div class="inner_filedsec">
-                  <input type="text" value="{{ $tier->minimun_cpc }}"  name="minimun_cpc"  class="form-control">
+                  <input type="text" value="{{ $tier->minimun_cpc }}" name="minimun_cpc" class="form-control">
                 </div>
                 @if ($errors->has('minimun_cpc')) 
                 <div class="error-custom"> {{$errors->first('minimun_cpc') }} </div>
@@ -85,7 +84,7 @@
               <label class="col-form-label col-md-3 col-sm-3 label-align"> Payout </label>
               <div class="col-md-9 col-sm-9">
                 <div class="inner_filedsec">
-                  <input type="text" value="{{ $tier->payout }}"  name="payout"  class="form-control">
+                  <input type="text" value="{{ $tier->payout }}" name="payout" class="form-control">
                 </div>
                 @if ($errors->has('payout')) 
                 <div class="error-custom"> {{$errors->first('payout') }} </div>

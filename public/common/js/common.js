@@ -28,7 +28,7 @@ $(function() {
 			'Last 30 Days': [moment().subtract(29, 'days'), moment()],
 			'This Month': [moment().startOf('month'), moment().endOf('month')],
 			'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-		},		
+		},
 	}, cb);
 	cb(start, end);
 });
@@ -39,9 +39,9 @@ function daysdifference(firstDate, secondDate){
 	var millisBetween = startDay.getTime() - endDay.getTime();
 	var days = millisBetween / (1000 * 3600 * 24);
 	return Math.round(Math.abs(days));
-}  
+}
 
-setTimeout(function() { 
+setTimeout(function() {
 	var filedval = $('#pubreportrange').val();
 	$('#pubreportrange').val(filedval);
 }, 2000);
@@ -56,7 +56,7 @@ function send_email(){
 			'X-CSRF-Token': $('meta[name="_token"]').attr('content')
 		},
 		data:{ value:value },
-		success:function(res) {		
+		success:function(res) {
 			if(res == 'true'){
 				$('.msg-email').html('Email Sent Successfully');
 				$('#loader').hide();
@@ -74,7 +74,7 @@ function update_notification_user(notification_id,redirect_url){
 			'X-CSRF-Token': $('meta[name="_token"]').attr('content')
 		},
 		data:{ notification_id:notification_id },
-		success:function(res) {			
+		success:function(res) {
 			if(res == 'true'){
 				if(redirect_url != ''){
 					window.location = redirect_url;
@@ -94,7 +94,7 @@ function update_notification_admin(notification_id,redirect_url){
 			'X-CSRF-Token': $('meta[name="_token"]').attr('content')
 		},
 		data:{ notification_id:notification_id },
-		success:function(res) {			
+		success:function(res) {
 			if(res == 'true'){
 				if(redirect_url != ''){
 					window.location = redirect_url;
@@ -108,7 +108,7 @@ function update_notification_admin(notification_id,redirect_url){
 
 $(document).ready(function() {
 	$("input[type='checkbox']").click(function() {
-		var value = $(this).val();				
+		var value = $(this).val();
 		if ($(this).prop("checked")) {
 			$('.'+value).removeAttr('disabled');
 		} else {
