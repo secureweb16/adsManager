@@ -96,7 +96,7 @@ class AdminPublisherController extends Controller
      $data->forceDelete();
      TelegramTiming::whereIn('telegram_group_id', $group_id)->delete();
      return redirect()->back()->with(['message'=> 'Deleted Successfully!']);
-    }
+   }
    
    public function trash()
    {
@@ -111,8 +111,8 @@ class AdminPublisherController extends Controller
      $id = decrypt($id);
      $data=User::onlyTrashed()->find($id)->restore();
      TelegramGroup::where('publisher_id', $id)->update([
-        'user_delete' => '0'
-      ]);
+      'user_delete' => '0'
+    ]);
      return redirect()->back()->with(['message'=> 'Restored Successfully!']);
    }
 

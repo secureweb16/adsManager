@@ -61,8 +61,7 @@ class AdminController extends Controller
       'token_reflection' => number_format($token_reflection, 2),
       'NFT_reflection' => number_format($NFT_reflection, 2),
       'avg_cpc' => number_format($avg_cpc, 2),
-      'feildVal' => $feildVal, 
-
+      'feildVal' => $feildVal,
     );
 
     return view('admin.dashboard',compact('alldata'));
