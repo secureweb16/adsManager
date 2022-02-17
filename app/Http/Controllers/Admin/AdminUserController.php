@@ -97,8 +97,8 @@ class AdminUserController extends Controller
 		$user = User::findOrFail($idnew);
 		$user->delete();
 		TelegramGroup::where('publisher_id', decrypt($id))->update([
-	      'user_delete' => '1'
-	    ]);
+			'user_delete' => '1'
+		]);
 		return redirect()->back()->with('message', 'User Deleted!');
 	}
 

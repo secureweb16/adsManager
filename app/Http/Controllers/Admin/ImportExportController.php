@@ -112,25 +112,16 @@ class ImportExportController extends Controller
 		$request->validate([
 			'csv_file'    => 'required|file|mimes:csv,txt|max:2048',
 		]);
-		// echo "dfbfd";
-		// exit;
-		// echo "<pre>";
-		$image = $request->file('csv_file');
-		echo "<pre>";
-    	print_r($image);
+		
+		$image = $request->file('csv_file');		
 
 		$pathinfo = $request->file('csv_file')->getClientOriginalName();
 
-		print_r($pathinfo);
-		exit;
 
 		$filename = pathinfo($pathinfo, PATHINFO_FILENAME);
 		$extension = pathinfo($pathinfo, PATHINFO_EXTENSION);
 
 		$fullname = $filename . '.' . $extension; 
-
-    // print_r($fullname);
-    // exit;
 
 		$destinationPath  = base_path('public/csvfile');
     	// $advertiser_id    = Auth::user()->id;
