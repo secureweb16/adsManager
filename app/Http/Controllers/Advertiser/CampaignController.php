@@ -22,10 +22,9 @@ use Secureweb\Socialmarketing\Models\Campaignmessage;
 
 class CampaignController extends Controller
 { 
-
   public function index()
   {
-    $advertiser_id = Auth::user()->id;  
+    $advertiser_id = Auth::user()->id;
     if(isset($_GET['daterange']) && $_GET['daterange'] !='' && $_GET['daterange'] !='Select the date'){
       $feildVal = $_GET['daterange'];
       $daterange = $_GET['daterange'];
@@ -38,7 +37,7 @@ class CampaignController extends Controller
         'toDate' => $toDate,
       );
 
-      $campaigns = Campaign::orderBy('id','desc')->where('advertiser_id',$advertiser_id)    
+      $campaigns = Campaign::orderBy('id','desc')->where('advertiser_id',$advertiser_id)
       ->withSum(['get_campaign_report' => function($query) use ($data) {
         $query->whereDate('created_at','>=',$data['fromDate']);
         $query->whereDate('created_at','<=',$data['toDate']);
@@ -46,14 +45,14 @@ class CampaignController extends Controller
       ->withSum(['get_campaign_report' => function($query) use ($data) {
         $query->whereDate('created_at','>=',$data['fromDate']);
         $query->whereDate('created_at','<=',$data['toDate']);
-      }],'total_amount')   
+      }],'total_amount')
       ->get();
 
-    }else{    
-      $feildVal = "Select the Date";         
+    }else{
+      $feildVal = "Select the Date";
       $campaigns = Campaign::orderBy('id','desc')->where('advertiser_id',$advertiser_id)
       ->withSum('get_campaign_report','no_of_clicks')
-      ->withSum('get_campaign_report','total_amount') 
+      ->withSum('get_campaign_report','total_amount')
       ->get();
     }
     return view('advertiser.campaign.list', compact('campaigns','feildVal'));
@@ -63,7 +62,7 @@ class CampaignController extends Controller
   {
     $alltier = Tier::get();
     return view('advertiser.campaign.create',compact('alltier'));
-  }  
+  }
 
   public function add_campaign(Request $request)
   {
@@ -87,9 +86,9 @@ class CampaignController extends Controller
     $advertiser_id    = Auth::user()->id;
     $image = $request->file('banner_image');
     $imageName = time().'.'.$request->banner_image->extension(); 
-    $destinationPath  = base_path('public/common/images/campaignUploads');    
-    $fundsAmount = $request->get('campaign_budget'); 
-    $chekFunds = FundsDetails::where('user_id',$advertiser_id)->where('remaning_funds','>=',$fundsAmount)->first();    
+    $destinationPath  = base_path('public/common/images/campaignUploads');
+    $fundsAmount = $request->get('campaign_budget');
+    $chekFunds = FundsDetails::where('user_id',$advertiser_id)->where('remaning_funds','>=',$fundsAmount)->first();
     $campaign_budget = (!empty($chekFunds))?$request->get('campaign_budget'):0;
 
     if($campaign_budget != 0){
@@ -135,7 +134,7 @@ class CampaignController extends Controller
         $remaningfunds = $chekFunds->remaning_funds-$campaign_budget;
         FundsDetails::where('user_id', $advertiser_id)->update(['spent_funds' => $campaign_budget,'remaning_funds'=>$remaningfunds]);
         return redirect()->route('advertiser.campaigns.edit',encrypt($campaign->id))->with('message', 'Campaign created!');
-      }      
+      }
     }
     return redirect()->route('advertiser.campiagns')->with('error','Campaign is not created due to funds insufficient!');
   }
@@ -152,7 +151,7 @@ class CampaignController extends Controller
   private function campaign_funds($campaignid,$campaign_budget){
     $campaignFund = new CampaignFund();
     $campaignFund->campaign_id    = $campaignid;
-    $campaignFund->funds_amount   = $campaign_budget;      
+    $campaignFund->funds_amount   = $campaign_budget;
     $campaignFund->funds_status   = 'Credit';
     $campaignFund->save();
   }
@@ -181,7 +180,6 @@ class CampaignController extends Controller
 
   public function update_campaign(Request $request)
   {
-
     $data =$request->get('campaign_tire');
     $mincpc = ($data == 0)?get_option_value('average_min_CPC_bid'):$this->tire_cpc_controller($request->get('campaign_tire'));
 
@@ -212,11 +210,9 @@ class CampaignController extends Controller
       $imageName = $request->get('campaign_banner');
     }
 
-    $campaignId = $request->get('campaignId');
-    
+    $campaignId = $request->get('campaignId');    
     $campaign   = Campaign::find($campaignId);
     $payDaily = ($campaign->campaign_budget >= $request->get('pay_daily'))?$request->get('pay_daily'):$campaign->campaign_budget;
-
     $campaign->headline         = $request->get('headline');       
     $campaign->tier_id          = $request->get('campaign_tier');
     $campaign->campaign_name    = $request->get('campaign_name');
@@ -317,7 +313,6 @@ class CampaignController extends Controller
     $fundsAmount = $request->get('funds_amount');
     $advertiser_id = Auth::user()->id;
     $chekFunds = FundsDetails::where('user_id',$advertiser_id)->where('remaning_funds','>=',$fundsAmount)->first();
-
     if(!empty($chekFunds)){
       $campaignFund = new CampaignFund();
       $campaignFund->campaign_id    = $campaignId;

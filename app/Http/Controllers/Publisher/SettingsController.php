@@ -137,7 +137,6 @@ class SettingsController extends Controller
       $hmac = hash_hmac('sha512',$data,env('COINPAYMENT_PRIVATE_KEY'));
       return $response = $this->hit_curl_function($data,$hmac);
       
-
     }
 
     private function hit_curl_function($data,$hmac) {
@@ -159,7 +158,7 @@ class SettingsController extends Controller
       $response = curl_exec($curl);
       curl_close($curl);
       return $response;
-    }   
+    }
 
     public function telegram_group_view(){
       $publisher_id = Auth::user()->id;
@@ -168,7 +167,7 @@ class SettingsController extends Controller
     }
 
     public function telegram_group(Request $request)
-    {      
+    {
       $request->validate([
         'telegram_group' => 'required|unique:telegram_groups',
         'frequency_of_ads' => 'required',
@@ -236,7 +235,7 @@ class SettingsController extends Controller
       return view('publisher.settings.telegram.create');
     }
 
-    public function telegram_group_edit_view($id){      
+    public function telegram_group_edit_view($id){
       $group = TelegramGroup::with(['TelegrmGroupDay'])->findOrFail(decrypt($id));
       $daysArray = $alldays = [];
       foreach($group->TelegrmGroupDay as $key => $value){
@@ -246,8 +245,6 @@ class SettingsController extends Controller
         );
         $alldays[] = $value->day;
       }
-      // print_r($daysArray);
-      // exit;
       return view('publisher.settings.telegram.edit',compact('group','daysArray','alldays'));
     }
 
@@ -301,11 +298,9 @@ class SettingsController extends Controller
         $groupName
       );
       return $social_marketing->sendRequest();
-
     }
 
     public function updatefreq(Request $request){
-
       $request->validate([
         'frequency_of_ads' => 'required',
         'hours_type' => 'required',
@@ -314,10 +309,10 @@ class SettingsController extends Controller
       ]);
       
       if($request->get('hours_type') == 'All Days' && $request->get('from_all_days') == '11:00 PM'){
-        return redirect()->back()->with('error', 'Start date not be 11:30 PM');      
+        return redirect()->back()->with('error', 'Start date not be 11:30 PM');
       }
       if($request->get('hours_type') == 'All Days' && $request->get('to_all_days') == '00:00 AM'){
-        return redirect()->back()->with('error', 'End date not be 00:00 AM');      
+        return redirect()->back()->with('error', 'End date not be 00:00 AM');
       }
      /* TelegramGroup::where('id', $request->get('group_id'))->update([
         'telegram_group' => $request->get('telegram_group'),
@@ -355,8 +350,7 @@ class SettingsController extends Controller
           $telegrmTiming->save();
         }
       }
-
-      return redirect()->route('publisher.settings.telegram.group')->with('message', 'Group update!');      
+      return redirect()->route('publisher.settings.telegram.group')->with('message', 'Group update!');
     }
 
     public function telegram_group_delete($id){      
